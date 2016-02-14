@@ -5,8 +5,6 @@ description: >
   Official website origami.js
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # "http://origamijs.com"
-twitter_username: #
-github_username:  #
 
 # Build settings
 markdown: kramdown
