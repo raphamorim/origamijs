@@ -1,0 +1,10 @@
+# Site settings
+title: Origamijs.com
+email: #
+description: >
+  Official website origami.js
+baseurl: "" # the subpath of your site, e.g. /blog
+url: # "http://origamijs.com"
+
+# Build settings
+markdown: kramdown
