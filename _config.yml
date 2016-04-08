@@ -5,6 +5,9 @@ description: Official website origami.js
 baseurl: ""
 url: http://origamijs.com
 domain: origamijs.com
+donwloadLink: https://github.com/raphamorim/origami.js/archive/master.zip
+contributeLink: https://github.com/raphamorim/origami.js/issues
+repoUrl: https://github.com/raphamorim/origami.js
 
 # Build settings
 markdown: kramdown
