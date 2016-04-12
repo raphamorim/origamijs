@@ -1,11 +1,16 @@
 # Site settings
-title: Origamijs.com
+title: Origami.js
 email: rapha850@gmail.com
 description: Official website origami.js
 baseurl: ""
 url: http://origamijs.com
 domain: origamijs.com
-donwloadLink: https://github.com/raphamorim/origami.js/archive/master.zip
+
+# Downlod Info
+downloadLink: https://github.com/raphamorim/origami.js/archive/master.zip
+downloadVersion: "0.4.7v"
+
+# Aditional Info
 contributeLink: https://github.com/raphamorim/origami.js/issues
 repoUrl: https://github.com/raphamorim/origami.js
 
