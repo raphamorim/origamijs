@@ -1,19 +1,36 @@
-<nav>
-	<ul>
-        <a class="active" href="{{ site.baseurl }}blog">
-            <li>Origami JS</li>
-        </a>
-        <a href="{{ site.repoUrl }}" target="_blank">
-            <li>GitHub</li>
-        </a>
-        <a href="{{ site.baseurl }}docs">
-            <li>Docs</li>
-        </a>
-        <a href="{{ site.baseurl }}examples">
-            <li>Showcase</li>
-        </a>
-        <a href="{{ site.baseurl }}kids">
-            <li>4Kids</li>
-        </a>
-    </ul>
+<nav class="container">
+
+	<div class="nav-open" id="navOpen">
+		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path fill="#FFF" d="M39.878 10.03H0V3.385h39.878v6.647m0 6.647H0v6.646h39.878v-6.646m0 13.292H0v6.645h39.878V29.97z"/></svg>
+	</div>
+
+	<ul class="navigation" id="navigation">
+
+		<li class="nav-item">
+			<a href="{{ site.baseurl }}blog" class="nav-links active">
+				Origami JS
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="{{ site.repoUrl }}" class="nav-links" target="_blank">
+				GitHub
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="{{ site.baseurl }}docs" class="nav-links">
+				Docs
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="{{ site.baseurl }}examples" class="nav-links">
+				Showcase
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="{{ site.baseurl }}kids" class="nav-links">
+				4Kids
+			</a>
+		</li>
+	</ul>
+
 </nav>
