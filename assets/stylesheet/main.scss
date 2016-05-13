@@ -1,0 +1,397 @@
+---
+#  main
+---
+
+* {
+-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+				box-sizing: border-box;
+}
+
+div {
+	border: 1px dashed #ccc;
+}
+
+/* imports
+------------------------------------------ */
+
+// Basic
+@import 'colors';
+@import 'fonts';
+
+// Components
+@import 'texts';
+
+// Layout
+@import 'nav';
+
+
+/* Global
+------------------------------------------ */
+body {
+	background-color: $purple;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 840px) {
+	.logo-container {
+		justify-content: center;
+		margin: 30px 0;
+	}
+}
+
+.question-highlight {
+	width: 100%;
+	max-width: 500px;
+}
+
+@media screen and (max-width: 660px) {
+	.question-highlight {
+		margin: 0 auto;
+	}
+}
+
+.question-highlight::before {
+	content: "";
+	display: block;
+	background: $light-purple;
+	height: 8px;
+	width: 50px;
+	margin-bottom: -20px;
+}
+
+.question-highlight::after {
+	content: "";
+	display: block;
+	position: relative;
+	margin-top: -221px;
+	margin-left: -20px;
+	z-index: -1;
+	border: 4px solid $dark-purple;
+	height: 210px;
+	width: 82px;
+}
+
+@media screen and (min-width: 840px) {
+	.first-section {
+		padding-left: 200px;
+		margin-top: -100px;
+	}
+}
+
+.download {
+	text-align: center;
+	margin-left: auto;
+}
+
+@media screen and (max-width: 660px) {
+	.download {
+		width: 100%;
+	}
+}
+
+.download-icon {
+	display: inline-block;
+	padding: 10px 0;
+	border: 6px solid $dark-purple;
+	margin: 30px 0;
+}
+
+@media screen and (min-width: 660px) {
+	.download-icon {
+		background: $dark-purple;
+		box-shadow: 2px 2px 10px #000;
+	}
+}
+
+.link {
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: 'Gotham-bold';
+	transition: opacity .3s;
+}
+
+.link:hover {
+	opacity: .7;
+}
+
+/* Old
+------------------------------------------ */
+// section {
+// 	width: 100%;
+// 	min-height: 600px;
+// }
+//
+// section.about {
+// 	color: #FFF;
+// 	background-color: green;
+// }
+// section.about .content {
+// 	display: flex;
+// 	width: 820px;
+// 	margin: 0 auto;
+// }
+// 	section.about .content--text {
+// 		padding-top: 205px;
+// 		width: 435px;
+// 		margin-left: 100px;
+// 	}
+// 	section.about .content--text .slash {
+// 		background: #550648;
+// 		height: 6px;
+// 		width: 70px;
+// 		content: ' ';
+// 	}
+// 	section.about .content--text h1 {
+// 		line-height: 1.5em;
+// 		font-size: 40px;
+// 		position: relative;
+// 		z-index: 2;
+// 		font-weight: 600;
+// 		padding-top: 15px;
+// 		letter-spacing: 0.05em;
+// 		text-transform: uppercase;
+// 	}
+// 	section.about .content--text p {
+// 		position: relative;
+// 		line-height: 1.8em;
+// 		font-size: 15px;
+// 		z-index: 2;
+// 		font-weight: 300;
+// 		letter-spacing: 0.05em;
+// 		padding-top: 10px;
+// 	}
+// 	section.about .content--text .rect {
+// 		position: relative;
+// 		margin-top: -155px;
+// 		margin-left: -20px;
+// 		z-index: 0;
+// 		border: 4px solid #1A001C;
+// 		height: 180px;
+// 		width: 70px;
+// 		animation-name: expand;
+//     	animation-duration: 4s;
+// 		animation-iteration-count: infinite;
+// 		content: '';
+// 	}
+// 	section.about .content--pin {
+// 		position: relative;
+// 		margin-top: 100px;
+// 		margin-left: -900px;
+// 	}
+// 	section.about .content--download {
+// 		position: relative;
+// 		margin-top: 250px;
+// 		margin-left: 150px;
+// 		transition: all 300ms ease;
+// 	}
+// 	section.about .content--download:hover {
+// 		opacity: .7;
+// 	}
+// 	section.about .content--download-text {
+// 		margin-left: -22px;
+// 		text-transform: uppercase;
+// 		font-weight: bold;
+// 		color: #FFF;
+// 		text-decoration: none;
+// 		padding: 25px 10px;
+// 	}
+// 	section.about .content--download-btn {
+// 		background: #180018;
+// 		content: '';
+// 		border-radius: 5px;
+// 		width: 120px;
+// 		height: 120px;
+// 	}
+// 	section.about .content--download-btn img {
+// 		margin-top: -35px;
+// 		margin-left: -5px;
+// 		-webkit-animation:spin 4s linear infinite;
+//     	-moz-animation:spin 4s linear infinite;
+//     	animation:spin 4s linear infinite;
+// 	}
+//
+// section.features {
+// 	color: #FFF;
+// 	background: #180018;
+// 	min-height: 500px;
+// 	/* MAYBE 1000PX; */
+// }
+// 	section.features .content {
+// 		display: flex;
+// 		width: 820px;
+// 		margin: 0 auto;
+// 	}
+// 	section.features a {
+// 		text-decoration: none;
+// 	}
+// 	section.features .content--text {
+// 		padding-top: 100px;
+// 		width: 500px;
+// 		margin-left: 150px;
+// 	}
+// 	section.features .content--text .slash {
+// 		background: #4DE7E5;
+// 		height: 6px;
+// 		width: 70px;
+// 		content: ' ';
+// 	}
+// 	section.features .content--text h1 {
+// 		line-height: 1.5em;
+// 		font-size: 45px;
+// 		position: relative;
+// 		z-index: 2;
+// 		font-weight: 600;
+// 		padding-top: 15px;
+// 		letter-spacing: 0.05em;
+// 		text-transform: uppercase;
+// 	}
+// 	section.features .content--text p {
+// 		position: relative;
+// 		line-height: 1.8em;
+// 		font-size: 15px;
+// 		z-index: 2;
+// 		font-weight: 300;
+// 		letter-spacing: 0.05em;
+// 		padding-top: 10px;
+// 	}
+// 	section.features .content--text .rect {
+// 		position: relative;
+// 		margin-top: -150px;
+// 		margin-left: -30px;
+// 		z-index: 0;
+// 		border: 4px solid #280123;
+// 		height: 180px;
+// 		width: 60px;
+// 		content: '';
+// 	}
+//
+//
+// section.join-us {
+// 	background: #FFF;
+// }
+// 	section.join-us .content {
+// 		width: 820px;
+// 		min-height: 700px;
+// 		margin: 0 auto;
+// 	}
+// 	section.join-us .grid {
+// 		width: 80%;
+// 		margin: 0 auto;
+// 		margin-top: 0px;
+// 		margin-bottom: 100px;
+// 		height: 200px;
+// 		display: flex;
+// 		justify-content: space-around;
+// 		align-items: center;
+// 	}
+// 	section.join-us .grid-item a {
+// 		color: #382334;
+// 	}
+// 	section.join-us .grid-item--text {
+// 		margin: 50px 0 0 0;
+// 		font-size: 14px;
+// 		text-transform: uppercase;
+// 		font-weight: 600;
+// 	}
+// 	section.join-us .content--data {
+// 		padding-top: 100px;
+// 		text-align: center;
+// 	}
+// 	section.join-us .content--data h1 {
+// 		font-size: 70px;
+// 		font-weight: lighter;
+// 		letter-spacing: .1em;
+// 		text-transform: uppercase;
+// 		margin-bottom: 100px;
+// 	}
+//
+//
+// section.we-need-you {
+// 	background: url('../images/origami-bg-contribute.jpg');
+// }
+// 	section.we-need-you .content {
+// 		width: 750px;
+// 		margin: 0 auto;
+// 		padding-top: 180px;
+// 	}
+//
+// 	section.we-need-you .message {
+// 		border: 7px solid #FFF;
+// 		color: #FFF;
+// 		text-align: center;
+// 		font-size: 90px;
+// 		font-weight: 500;
+// 		padding: 65px 0px;
+// 		text-transform: uppercase;
+// 		transition: all 200ms ease;
+// 	}
+// 	section.we-need-you .message:hover {
+// 		border-color: #39002A;
+// 		color: #39002A;
+// 	}
+//
+//
+// .hexa img{
+//     width:100%;
+//     margin-top: -5px;
+//     -webkit-filter: grayscale(100%);
+// 	filter: grayscale(100%);
+// }
+// .hexa, .hexa div {
+//     margin: 0 auto;
+//     transform-origin: 50% 50%;
+//     overflow: hidden;
+// }
+// .hexa {
+//     text-align: center;
+//     margin: 0;
+//     width: 135px;
+//     height: 115px;
+// }
+// .hexa div {
+//   width: 100%;
+//   height: 100%;
+// }
+// .hexa {
+//   transform: rotate(120deg);
+// }
+// .hex1 {
+//   transform: rotate(-60deg);
+// }
+// .hex2 {
+//   transform: rotate(-60deg);
+// }
+//
+// .contribute-btn {
+// 	background: #340031;
+// 	text-transform: uppercase;
+// 	color: #FFF;
+// 	padding: 20px 30px;
+// 	transition: all 300ms ease;
+// }
+// .contribute-btn:hover {
+// 	padding: 30px 40px;
+// }
+
+
+/* ANIMATIONS */
+// @keyframes expand {
+//     0%   {width: 70px; border-color: #1A001C;}
+//     25%  {width: 280px; border-color: #280123; }
+//     50%  {width: 140px; border-color: #280123;}
+//     100% {width: 70px; border-color: #1A001C;}
+// }
+//
+// @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+// @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+// @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
