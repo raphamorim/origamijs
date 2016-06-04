@@ -1,6 +1,21 @@
-.second-section{
+.second-section {
   width: 100%;
   height: 100vh;
   background-color: $dark-purple;
   margin-top: 60px;
+
+  .question-highlight::before {
+      background: $turquoise;
+  }
+
+  .question-highlight::after {
+      border: 4px solid $purple;
+      margin-left: -60px;
+  }
+}
+
+.feature-blocks {}
+
+.center {
+  margin: 0 auto;
 }
