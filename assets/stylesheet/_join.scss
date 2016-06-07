@@ -8,39 +8,43 @@
 }
 
 .contribute{
-  .hexa {
+  .transform {
     display: inline-block;
+    transform: rotate(120deg);
+    text-align: center;
+    margin: 10px;
+    width: 135px;
+    height: 115px;
     img{
       width:100%;
       margin-top: -5px;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
     }
+    div{
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  .hexa, div {
+}
+
+.contribute{
+  .transform, div {
     margin: 0 auto;
     transform-origin: 50% 50%;
     overflow: hidden;
   }
 
-  .hexa {
-      transform: rotate(120deg);
-      text-align: center;
-      margin: 10px;
-      width: 135px;
-      height: 115px;
-      div{
-        width: 100%;
-        height: 100%;
-      }
-  }
-  .hex1 {
+  .transform_lvl1 {
     transform: rotate(-60deg);
   }
 
-  .hex2 {
+  .transform_lvl2 {
     transform: rotate(-60deg);
   }
+}
+
+.twiter_name{
 
 }
