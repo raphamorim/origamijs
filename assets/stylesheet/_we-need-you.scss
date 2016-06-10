@@ -1,21 +1,22 @@
-.fourth-section{
-  height: 50vh;
+.fourth-section {
+  min-height: 75vh;
   background-image: url('../images/origami-bg-contribute.jpg');
-  a{
+  margin-bottom: -20px;
+  a {
     text-decoration: none;
   }
-
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
     .centered {
-      padding: 60px;
+      margin-top: 12vh;
     }
   }
 }
 
 .we-need-you__title{
-  border: 5px solid $white;
-  padding: 10px;
+  border: 6px solid $white;
+  font-size: 10vh;
+  padding: 14vh 6vh;
 }
