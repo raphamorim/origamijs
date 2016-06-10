@@ -6,16 +6,20 @@
   .question-highlight {
     padding-top: 3vh;
   }
-    .heading-lv2{
+    .heading-lv2 {
       z-index: 2;
       font-size: 6vh;
       line-height: 8vh;
+    }
+    .paragraph {
+      font-size: 2vh;
+      line-height: 3.5vh;
     }
   .question-highlight::before {
     background: $turquoise;
   }
   .question-highlight::after {
-    border: 4px solid $purple;
+    border: 0.5vh solid $purple;
     margin-left: -6vh;
   }
 }
