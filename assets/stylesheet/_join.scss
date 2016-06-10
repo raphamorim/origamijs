@@ -1,6 +1,6 @@
 .third-section {
 	background:$white;
-  height: 70vh;
+  height: 80vh;
   .heading-lv1 {
     color: $light-purple;
     text-align: center;
@@ -8,8 +8,11 @@
 }
 
 .contribute{
+	display: inline-flex;
+	padding: 20px;
+	margin-bottom: 30px;
   .transform {
-    display: inline-block;
+    display: block;
     transform: rotate(120deg);
     text-align: center;
     margin: 10px;
@@ -29,9 +32,7 @@
 }
 
 .contribute{
-	height: 60vh;
   .transform, div {
-    margin: 0 auto;
     transform-origin: 50% 50%;
     overflow: hidden;
   }
@@ -46,15 +47,12 @@
 }
 
 .contribute__twitter{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-bottom: 30px;
-
+	display: table-caption;
+	text-align: center;
+	margin: 0 40px;
 	a{
 		text-decoration: none;
 		max-width: 50%;
-		margin: 20px;
     color: $light-purple;
 	}
 }
@@ -62,7 +60,6 @@
 .contribute__link{
 	display: flex;
   justify-content: center;
-	top: 60px;
 	position: relative;
 }
 
