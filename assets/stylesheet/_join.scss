@@ -1,37 +1,42 @@
 .third-section {
 	background:$white;
-  height: 80vh;
+  min-height: 80vh;
   .heading-lv1 {
     color: $light-purple;
     text-align: center;
+    font-size: 10vh;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10vh;
   }
 }
 
-.contribute{
+.contribute {
 	display: inline-flex;
-	padding: 20px;
-	margin-bottom: 30px;
+  margin-top: 2vh;
+	margin-bottom: 5vh;
   .transform {
     display: block;
     transform: rotate(120deg);
     text-align: center;
-    margin: 10px;
+    margin: 1vh;
+    margin-bottom: 3vh;
     width: 135px;
     height: 115px;
-    img{
+    img {
       width:100%;
       margin-top: -5px;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
     }
-    div{
+    div {
       width: 100%;
       height: 100%;
     }
   }
 }
 
-.contribute{
+.contribute {
   .transform, div {
     transform-origin: 50% 50%;
     overflow: hidden;
@@ -46,24 +51,25 @@
   }
 }
 
-.contribute__twitter{
+.contribute__twitter {
 	display: table-caption;
 	text-align: center;
 	margin: 0 40px;
-	a{
+	a {
 		text-decoration: none;
 		max-width: 50%;
     color: $light-purple;
 	}
 }
 
-.contribute__link{
+.contribute__link {
 	display: flex;
   justify-content: center;
 	position: relative;
+  padding: 6vh 0;
 }
 
-.btn{
+.btn {
 	font-family: 'Gotham-light';
 	padding: 15px 30px;
 	transition: all 300ms ease;

@@ -1,16 +1,22 @@
 .second-section {
-  width: 100%;
   height: 100vh;
   background-color: $dark-purple;
-  margin-top: 60px;
-
-  .question-highlight::before {
-      background: $turquoise;
+  overflow: hidden;
+  padding-top: 6vh;
+  .question-highlight {
+    padding-top: 3vh;
   }
-
+    .heading-lv2{
+      z-index: 2;
+      font-size: 6vh;
+      line-height: 8vh;
+    }
+  .question-highlight::before {
+    background: $turquoise;
+  }
   .question-highlight::after {
-      border: 4px solid $purple;
-      margin-left: -60px;
+    border: 4px solid $purple;
+    margin-left: -6vh;
   }
 }
 
@@ -20,20 +26,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .number{
+  .number {
     z-index: -1;
     height: 0;
     margin: 0;
-    text-align: right;
-    font-size: 120px;
+    text-align: left;
+    font-size: 14vh;
   }
-  .chainable-canvas, .css-notation, .selectors{
-    width: 200px;
+  .chainable-canvas, .css-notation, .selectors {
+    width: 26vh;
     display: inline-block;
-    margin: 80px;
-    margin-bottom: 40px;
+    margin: 7vh 10vh 5vh 10vh;
     .heading-lv2{
       z-index: 2;
+      font-size: 6vh;
+      line-height: 8vh;
     }
   }
 }
