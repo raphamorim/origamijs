@@ -37,11 +37,14 @@ body {
 
 .container {
 	margin: 0 auto;
-	padding: 0 20px;
 	width: 100%;
-	max-width: 1000px;
+	max-width: 120vh;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.logo-container a img {
+    width: 20vh;
 }
 
 @media screen and (max-width: 840px) {
@@ -52,8 +55,13 @@ body {
 }
 
 .question-highlight {
-	width: 100%;
-	max-width: 500px;
+	width: 55vh;
+	max-width: 80vh;
+    .paragraph {
+      font-size: 2vh;
+      line-height: 3.5vh;
+      margin-top: -2vh;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -104,7 +112,7 @@ body {
 
 .download-icon {
 	display: inline-block;
-	padding: 10px 0;
+	padding: 5vh 2vh;
 	border: 6px solid $dark-purple;
 	margin: 30px 0;
 }
@@ -112,12 +120,13 @@ body {
 @media screen and (min-width: 660px) {
 	.download-icon {
 		background: $dark-purple;
-        border-radius: 4px;
+        border-radius: 0.5vh;
 	}
 }
 
 .link {
 	color: $white;
+    font-size: 2vh;
 	text-decoration: none;
 	text-transform: uppercase;
     font-family: 'Gotham-bold';
