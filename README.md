@@ -1,7 +1,7 @@
-![](assets/images/logo-origami-clean.png)
+# [Origami.js](http://origamijs.com/)
 
 > Official website origami.js
-
+___
 
 ## Setup
 
