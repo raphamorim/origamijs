@@ -1,0 +1,12 @@
+/* Animations
+------------------------------------------*/ 
+@keyframes expand {
+    0%   { width: 70px;  border-color: #1A001C; }
+    25%  { width: 280px; border-color: #280123; }
+    50%  { width: 140px; border-color: #280123; }
+    100% { width: 70px;  border-color: #1A001C; }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
