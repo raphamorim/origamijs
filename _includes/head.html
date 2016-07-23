@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {% if page.title %}{{ page.title }}
+        {% else %}{{ site.title }}{% endif %}
+    </title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Android Lollipop theme color -->
+    <meta name="theme-color" content="#330031">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/stylesheet/main.css" type="text/css">
+</head>
