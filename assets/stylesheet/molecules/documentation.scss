@@ -1,0 +1,28 @@
+.documentation {
+    margin: 0 auto;
+    width: 860px;
+    margin-left: 420px;
+}
+
+.doc_header {
+    height: 360px;
+    padding-top: 40px;
+    color: $purple;
+}
+
+.doc_header-title {
+    font-size: 48px;
+    font-family: 'Gotham-bold';
+    text-transform: uppercase;
+}
+
+.doc_header-text {
+    width: 774px;
+    font-family: "Gotham-light";
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.lets-see {
+    margin-top: 42px;
+}
