@@ -1,0 +1,17 @@
+.sidebar {
+    background-color: $purple;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+
+.origami_icon {
+    text-align: center;
+    margin-top: 60px;
+
+    .origami_icon-rotate {
+        animation: spin 4s infinite;
+    }
+}
