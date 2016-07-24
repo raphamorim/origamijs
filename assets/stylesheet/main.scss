@@ -2,20 +2,25 @@
 #  main
 ---
 
-/* Imports
------------------------------------------- */
-// Atoms
+/*==============================
+        IMPORT ALL FILES
+ ==============================*/
+
+//---------- Atoms ----------
+@import "atoms/normalize";
 @import 'atoms/animations';
 @import 'atoms/colors';
 @import 'atoms/fonts';
 @import 'atoms/global';
 @import 'atoms/texts';
 
-// Molecules
+//---------- Molecules ----------
+@import "molecules/documentation";
 @import 'molecules/about';
 @import 'molecules/feature';
 @import 'molecules/join';
 @import 'molecules/we-need-you';
 
-// Organisms
+//---------- Organisms ----------
 @import 'organisms/nav';
+@import 'organisms/sidebar';
