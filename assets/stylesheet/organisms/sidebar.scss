@@ -12,6 +12,6 @@
     margin-top: 60px;
 
     .origami_icon-rotate {
-        animation: spin 4s infinite;
+        animation: spin linear 4s 1;
     }
 }

@@ -78,7 +78,7 @@
 }
 
 .download-icon--rotate {
-	animation: spin 4s infinite;
+	animation: spin linear 4s 1;
 }
 
 .link {

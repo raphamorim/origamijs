@@ -7,8 +7,12 @@
 }
 
 body {
-	background-color: $purple;
+	background-color: $white;
     margin: 0px;
+}
+
+body.home {
+	background-color: $purple;
 }
 
 .container {
