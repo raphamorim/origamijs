@@ -9,11 +9,8 @@
 body {
 	background-color: $white;
     margin: 0px;
+    -webkit-font-smoothing: antialiased;
 }
-
-// div {
-//     border: 1px solid white;
-// }
 
 body.home {
 	background-color: $purple;
