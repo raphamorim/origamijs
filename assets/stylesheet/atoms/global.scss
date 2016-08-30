@@ -11,6 +11,10 @@ body {
     margin: 0px;
 }
 
+// div {
+//     border: 1px solid white;
+// }
+
 body.home {
 	background-color: $purple;
 }
@@ -18,7 +22,7 @@ body.home {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 140vh;
+	max-width: 57em;
 	display: flex;
 	flex-wrap: wrap;
 }

@@ -1,5 +1,5 @@
 .fourth-section {
-  min-height: 75vh;
+  min-height: 35rem;
   background-image: url('../images/origami-bg-contribute.jpg');
   margin-bottom: -20px;
   a {
@@ -10,13 +10,31 @@
     align-items: center;
     justify-content: center;
     .centered {
-      margin-top: 12vh;
+      margin-top: 6rem;
     }
   }
 }
 
 .we-need-you__title{
   border: 6px solid $white;
-  font-size: 10vh;
-  padding: 14vh 6vh;
+  font-size: 5rem;
+  padding: 7rem 3rem;
+}
+
+@media screen and (max-width: 840px) {
+    .fourth-section {
+        min-height: 15rem;
+        .container {
+            .centered {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .we-need-you__title{
+      border: 3px solid $white;
+      font-size: 2rem;
+      padding: 1rem 1rem;
+    }
+
 }

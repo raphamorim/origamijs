@@ -2,23 +2,23 @@
 ------------------------------------------ */
 .heading-lv1 {
 	font-family: 'Gotham-light';
-	font-size: 70px;
+	font-size: 6rem;
 	color: $white;
 }
 
 .heading-lv2 {
     font-family: 'Gotham-bold';
-	font-size: 48px;
-	line-height: 65px;
-	letter-spacing: 1px;
+	font-size: 4rem;
+	line-height: 4rem;
+	letter-spacing: 0.2rem;
 	color: $white;
 	text-transform: uppercase;
 }
 
 .paragraph {
 	font-family: 'Gotham-light';
-	font-size: 17px;
-	line-height: 35px;
-	letter-spacing: -0.2px;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	letter-spacing: -0.08rem;
 	color: $white;
 }

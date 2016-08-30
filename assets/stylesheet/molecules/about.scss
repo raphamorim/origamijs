@@ -1,8 +1,8 @@
 .first-section {
     padding-left: 200px;
     margin-top: -50px;
-    height: 400px; // momentary
-  }
+    height: 25rem;
+}
 
 @media screen and (max-width: 840px) {
 	.logo-container {
@@ -12,7 +12,7 @@
 }
 
 .question-highlight {
-	max-width: 500px;
+	max-width: 30rem;
 }
 
 @media screen and (max-width: 660px) {
@@ -68,13 +68,8 @@
 	padding: 0.5vh 0.5vh;
 	border: 6px solid $dark-purple;
 	margin: 5vh 0;
-}
-
-@media screen and (min-width: 660px) {
-	.download-icon {
-		background: $dark-purple;
-        border-radius: 0.5vh;
-	}
+    background: $dark-purple;
+    border-radius: 0.5vh;
 }
 
 .download-icon--rotate {
@@ -83,7 +78,7 @@
 
 .link {
 	color: $white;
-    font-size: 2vh;
+    font-size: 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
     font-family: 'Gotham-bold';
@@ -92,4 +87,42 @@
 
 .link:hover {
 	opacity: .7;
+}
+
+@media screen and (max-width: 840px) {
+    .question-highlight {
+        margin: 0 auto;
+    }
+
+    .question-highlight::after {
+        display: none;
+    }
+
+    .question-highlight::before {
+        display: none;
+    }
+
+    .first-section {
+        padding: 1rem 2rem;
+        height: 24rem;
+
+        .heading-lv2 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .paragraph {
+            font-size: 1.1rem;
+            line-height: 2rem;
+            letter-spacing: 0.08rem;
+        }
+    }
+
+    .download {
+        display: none;
+    }
+
+    .question-highlight {
+        margin-top: 3rem;
+    }
 }

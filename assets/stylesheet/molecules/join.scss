@@ -1,24 +1,24 @@
 .third-section {
 	background: $white;
-	min-height: 84vh;
+	height: 40rem;
 	.heading-lv1 {
 		color: $light-purple;
 		text-align: center;
-		font-size: 10vh;
+		font-size: 5rem;
 		text-transform: uppercase;
 		font-weight: 300;
-		margin-top: 10vh;
+		margin-top: 5rem;
 	}
 }
 .contribute {
 	display: inline-flex;
-	margin-top: 2vh;
-	margin-bottom: 5vh;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	.transform {
 		display: block;
 		transform: rotate(120deg);
 		text-align: center;
-		margin: 1vh 1vh 3vh;
+		margin: 0.5rem 0.5rem 2rem;
 		width: 135px;
 		height: 115px;
 		img {
@@ -60,7 +60,7 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
-	padding: 6vh 0;
+	padding: 3rem 0;
 }
 .btn {
 	font-family: 'Gotham-light';
@@ -76,4 +76,23 @@
 		background: $purple;
 		color: $white;
 	}
+}
+
+@media screen and (max-width: 840px) {
+    .third-section {
+        height: 15rem;
+
+        .heading-lv1 {
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+    }
+
+    .contribute {
+        display: none;
+    }
+
+    .contribute__link {
+        padding: 0 0;
+    }
 }

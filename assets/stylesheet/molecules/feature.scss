@@ -1,22 +1,17 @@
 .second-section {
-    height: 90vh;
+    height: 48rem;
     background-color: $dark-purple;
     overflow: hidden;
-    padding-top: 6vh;
+    padding-top: 5rem;
 
     .question-highlight {
-        padding-top: 3vh;
+        padding-top: 1rem;
     }
 
     .heading-lv2 {
         z-index: 2;
-        font-size: 6vh;
-        line-height: 8vh;
-    }
-
-    .paragraph {
-        font-size: 2.2vh;
-        line-height: 3.5vh;
+        font-size: 3rem;
+        line-height: 3rem;
     }
 
     .question-highlight::before {
@@ -24,8 +19,8 @@
     }
 
     .question-highlight::after {
-        border: 0.5vh solid $purple;
-        margin-left: -6vh;
+        border: 0.2rem solid $purple;
+        margin-left: -3rem;
     }
 }
 
@@ -41,23 +36,78 @@
         height: 0;
         margin: 0;
         text-align: left;
-        font-size: 14vh;
+        font-size: 7rem;
     }
 
     .chainable-canvas,
     .css-notation,
     .selectors {
-        width: 26vh;
+        width: 14rem;
         display: inline-block;
-        margin: 7vh 10vh 5vh;
+        margin: 3rem 5rem 2.5rem;
         .heading-lv2 {
             z-index: 2;
-            font-size: 6vh;
-            line-height: 8vh;
+            font-size: 3rem;
+            line-height: 4rem;
         }
     }
 }
 
 .center {
     margin: 0 auto;
+}
+
+@media screen and (max-width: 840px) {
+    .second-section {
+        height: 38rem;
+        padding-top: 3rem;
+
+        .question-highlight {
+            padding: 1rem 2.3rem;
+        }
+
+        .heading-lv2 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .paragraph {
+            font-size: 0.9rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.08rem;
+        }
+    }
+
+    .feature-blocks {
+        flex-flow: row wrap;
+        width: 50%;
+        white-space: nowrap;
+
+        .number {
+            font-size: 3.5rem;
+        }
+
+        .chainable-canvas,
+        .css-notation,
+        .selectors {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100%;
+            width: 8rem;
+            display: block;
+            word-break:break-all;
+            margin: 0.2rem;
+            .heading-lv2 {
+                z-index: 2;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feature-blocks {
+        width: 80%;
+    }
 }
