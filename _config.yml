@@ -17,5 +17,10 @@ repoUrl: https://github.com/raphamorim/origami.js
 # Build settings
 markdown: kramdown
 
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
 sass:
   sass_dir: assets/stylesheet

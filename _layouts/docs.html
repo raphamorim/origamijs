@@ -5,18 +5,7 @@
         {% include nav.html %}
         {% include sidebar.html %}
         <section class="documentation">
-            <div class="doc_header">
-                <h1 class="doc_header-title">
-                    styling with css
-                </h1>
-                <p class="doc_header-text">
-                    For those who use native canvas, you need to adapt to a different way to apply styles to a shape. The origami.js lets you use
-                    the CSS notation in a javascript object to useand apply on a shape.
-                </p>
-                <p class="doc_header-text lets-see">
-                    Let's see:
-                </p>
-            </div>
+            {{ content }}
         </section>
         {% include footer.html %}
     </body>

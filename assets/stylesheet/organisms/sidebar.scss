@@ -5,6 +5,23 @@
     position: absolute;
     z-index: 10;
     top: 0;
+
+    .sidebar-nav {
+        margin-top: 5rem;
+    }
+
+    .sidebar-link {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: right;
+
+        h2 {
+            margin-right: 2rem;
+        }
+    }
 }
 
 .origami_icon {

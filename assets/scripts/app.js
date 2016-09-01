@@ -1,7 +1,10 @@
 (function() {
     function defineActiveNav(sel) {
-        var url = window.location.pathname,
-            urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/, '')),
+        var url = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
+        if (url == '') {
+            url = window.location.origin + '/?$';
+        }
+        var urlRegExp = new RegExp(url),
             navs = document.querySelectorAll('#navigation .nav-links'),
             items = Array.apply(null, {
                 length: navs.length

@@ -1,5 +1,14 @@
 <aside class="sidebar">
     <div class="origami_icon">
         <img src="/assets/images/logo-origami-outline.svg" alt="logo" class="origami_icon-rotate">
+
+        <div class="sidebar-nav">
+        {% for doc in site.docs %}
+            <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title }}" class="sidebar-link">
+                <h2>{{ doc.title }}</h2>
+            </a>
+            <!--     {{ doc.content }} -->
+        {% endfor %}
+        </div>
     </div>
 </aside>
