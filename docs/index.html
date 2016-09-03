@@ -4,3 +4,13 @@ title: Docs
 class: docs
 description: Origami.js Documentation
 ---
+
+<h1>Summary</h1>
+
+<p>Initially it's a tool for teaching geometry, web and javascript in schools. Currently it's a powerful library to create using HTML5 Canvas.</p>
+
+{% for doc in site.docs %}
+    <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title }}" class="sidebar-link">
+        <h4>{{ doc.title }}</h4>
+    </a>
+{% endfor %}

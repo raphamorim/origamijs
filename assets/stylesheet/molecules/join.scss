@@ -62,6 +62,7 @@
 	position: relative;
 	padding: 3rem 0;
 }
+
 .btn {
 	font-family: 'Gotham-light';
 	padding: 15px 30px;
@@ -69,13 +70,22 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: none;
-	&:hover {
-		padding: 20px 35px;
-	}
 	&-contribute {
 		background: $purple;
 		color: $white;
+        &:hover {
+            padding: 20px 35px;
+        }
 	}
+    &-read {
+        padding: 10px 30px;
+        background: $purple;
+        color: $white;
+    }
+}
+
+.read-wrapper {
+    margin: 60px 0;
 }
 
 @media screen and (max-width: 840px) {
