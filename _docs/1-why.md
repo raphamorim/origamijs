@@ -32,7 +32,10 @@ origami('.canvas-class')
 origami.draw();
 You can use pure CSS to style a shape. See Shape.
 
+## Smart Coordinates
+
+Available for the following methods: rect, arc, image
+
 <div class="read-wrapper">
     <a href="../2-getting" class="btn btn-read">Getting</a>
 </div>
-
