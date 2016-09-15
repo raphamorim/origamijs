@@ -9,8 +9,12 @@ description: Origami.js Documentation
 
 <p>Initially it's a tool for teaching geometry, web and javascript in schools. Currently it's a powerful library to create using HTML5 Canvas.</p>
 
+<ul class="menu-navigation">
 {% for doc in site.docs %}
-    <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title }}" class="sidebar-link">
-        <h4>{{ doc.title }}</h4>
-    </a>
+    <li>
+        <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title }}" class="sidebar-link">
+            {{ doc.title }}
+        </a>
+    </li>
 {% endfor %}
+</ul>

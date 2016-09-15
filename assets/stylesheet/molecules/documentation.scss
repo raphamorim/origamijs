@@ -4,26 +4,59 @@
     margin-left: 420px;
 
     h1 {
-        font-size: 48px;
-        font-family: 'Gotham-bold';
+        font-size: 40px;
+        font-family: 'Montserrat-Bold';
         text-transform: uppercase;
         color: $purple;
         padding-top: 40px;
     }
 
     h2 {
-        font-size: 28px;
-        font-family: 'Gotham-bold';
+        font-size: 23px;
+        font-weight: 100;
+        font-family: 'Montserrat-Bold';
         text-transform: uppercase;
-        color: $purple;
+        color: $docs-purple;
         padding-top: 20px;
         padding-bottom: 10px;
     }
 
     p {
         width: 774px;
-        font-family: "Gotham-light";
-        font-size: 20px;
-        line-height: 36px;
+        font-family: "Montserrat-Light";
+        font-size: 16px;
+        letter-spacing: -0.3px;
+        line-height: 29px;
+        color: $docs-gray;
+    }
+
+    p > a {
+        color: #af79a5;
+        font-family: "Montserrat-Regular";
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #af79a5;
+    }
+}
+
+.menu-navigation {
+    list-style-type: none;
+    padding: 0;
+    overflow-x: hidden;
+    margin-top: 30px;
+
+    li {
+        width: 600px;
+        color: transparent;
+        margin-bottom: 25px;
+        clear: both;
+        border-bottom: 1px dotted #af79a5;
+
+        a.title {
+            text-transform: uppercase;
+            font-family: "Montserrat-Bold";
+            font-size: 20px;
+            text-decoration: none;
+        }
     }
 }

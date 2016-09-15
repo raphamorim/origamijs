@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include head.html %}
-    <body>
-        {% include nav.html %}
-        {% include sidebar.html %}
-        <section class="documentation">
-            {{ content }}
-        </section>
-        {% include footer.html %}
-    </body>
-</html>
+    <!-- Prism -->
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/stylesheet/origami.prism.css" type="text/css">
+
+    {% include nav.html %}
+    {% include sidebar.html %}
+    <section class="documentation">
+        {{ content }}
+    </section>
+{% include footer.html %}
