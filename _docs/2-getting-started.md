@@ -1,11 +1,15 @@
 ---
-title: getting
+title: getting started
 layout: docs
+topics:
+  - obtaining-origamijs
 order: 2
 description: First of all, get Origami.js using Download Option or via package manager
 ---
 
-# Getting
+# Getting Started
+
+## Obtaining Origami.js
 
 First of all, get Origami.js using [Download Option]({{ site.downloadLink }}) or via package manager.
 
@@ -23,5 +27,5 @@ Add the source before body tag end:
 &#60;/body&#62;</code></pre>
 
 <div class="read-wrapper">
-    <a href="../3-basic-usage" class="btn btn-read">Read Basic Usage Guide</a>
+    <a href="../3-API-docs" class="btn btn-read">Read API Docs</a>
 </div>

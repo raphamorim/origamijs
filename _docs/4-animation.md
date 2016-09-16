@@ -20,7 +20,7 @@ description: Origamijs Animation Methods
 <code class="language-javascript">loop</code> • optional, default: <code class="language-javascript">true</code>
 
 <pre><code class="language-javascript">origami('#demo-1')
-  .canvasBackground('#2A80B9')
+  .background('#2A80B9')
   .sprite(40, 30, {
     src: 'images/coin-sprite.png',
     frames: 10,

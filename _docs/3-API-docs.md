@@ -1,11 +1,11 @@
 ---
-title: basic usage
+title: API docs
 layout: docs
 order: 3
 description: Origamijs Basic Usage
 ---
 
-# Basic Usage
+# API Docs
 
 ## Draw
 
@@ -29,7 +29,6 @@ Method that performs the operation of drawing. If you forget to use, nothing wil
 
 Creates a path for a rectangle at position (x, y) with a size that is determined by width and height.
 
-
 <pre><code class="language-javascript">octx.rect(x, y, width, height)</code></pre>
 
 **Parameters**
@@ -43,8 +42,6 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
 <code class="language-markup">height</code> • The rectangle's height.
 
 <code class="language-markup">style</code> • The style object.
-
-
 
 <pre><code class="language-javascript">origami('.canvas')
   .rect(10, 10, 50, 100, {
@@ -65,6 +62,16 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
 
 ## Line
 
+Connects the points (for each point argument) in the sub-path to the x, y coordinates with a straight line.
+
+<pre><code class="language-javascript">octx.line(...arguments)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">point</code> • The point in current line, which is a object with **x** and **y** keys.
+
+<code class="language-markup">style</code> • The style object.
+
 <pre><code class="language-javascript">origami('.one')
   .line({x: 10, y: 10}, {x: 150, y: 200},
     {border: '1px dashed #888'})
@@ -77,6 +84,26 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
 </div>
 
 ## Arc
+
+Adds an arc to the path which is centered at (x, y) position with radius r starting at startAngle and ending at endAngle going in the given direction by anticlockwise (defaulting to clockwise).
+
+<pre><code class="language-javascript">octx.arc(x, y, radius, style, startAngle, endAngle, anticlockwise)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">x</code> • The x axis of the coordinate for the rectangle starting point.
+
+<code class="language-markup">y</code> • The y axis of the coordinate for the rectangle starting point.
+
+<code class="language-markup">radius</code> • The arc's radius.
+
+<code class="language-markup">style</code> • The style object.
+
+<code class="language-markup">startAngle</code> • (optional) The angle at which the arc starts, measured clockwise from the positive x axis and expressed in radians.
+
+<code class="language-markup">endAngle</code> • (optional) The angle at which the arc ends, measured clockwise from the positive x axis and expressed in radians.
+
+<code class="language-markup">anticlockwise</code> • (optional) If true, causes the arc to be drawn counter-clockwise between the two angles. By default it's drawn clockwise.
 
 <pre><code class="language-javascript">var style = {
   background: '#2A80B9',
@@ -94,6 +121,16 @@ origami('.element')
 </div>
 
 ## Polygon
+
+Connects the points (for each point argument) in the sub-path to the x, y coordinates with a transparent line, on the draw process will fill the generated shape.
+
+<pre><code class="language-javascript">octx.polygon(...arguments)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">point</code> • The point in current line, which is a object with **x** and **y** keys.
+
+<code class="language-markup">style</code> • The style object.
 
 <pre><code class="language-javascript">origami('.one')
   .polygon({x: 100, y: 110}, {x: 200, y: 10}, {x: 300, y: 110}, {
