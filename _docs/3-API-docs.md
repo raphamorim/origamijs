@@ -9,7 +9,13 @@ description: Origamijs Basic Usage
 
 ## Draw
 
-Method that performs the operation of drawing. If you forget to use, nothing will happen :)
+Method that performs the operation of drawing the current <code class="language-javascript">OrigamiContext</code> queue.
+
+<pre><code class="language-javascript">octx.draw(delay)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">delay</code> • (optional) Execute after a specified number of milliseconds. Tip: 1000 ms = 1 second.
 
 <pre><code class="language-javascript">origami('#canvas')
   .arc(100, 75, 50, {
@@ -91,9 +97,9 @@ Adds an arc to the path which is centered at (x, y) position with radius r start
 
 **Parameters**
 
-<code class="language-markup">x</code> • The x axis of the coordinate for the rectangle starting point.
+<code class="language-markup">x</code> • The x axis of the coordinate for the arc starting point.
 
-<code class="language-markup">y</code> • The y axis of the coordinate for the rectangle starting point.
+<code class="language-markup">y</code> • The y axis of the coordinate for the arc starting point.
 
 <code class="language-markup">radius</code> • The arc's radius.
 
@@ -188,6 +194,20 @@ Load Styles and apply style rules on Shape (empty object canvas):
 </div>
 
 ## Text
+
+Fills a given text at the given (x,y) position.
+
+<pre><code class="language-javascript">octx.text(text, x, y, style)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">text</code> • The text.
+
+<code class="language-markup">x</code> • (optional) The x axis of the coordinate for the text block starting point.
+
+<code class="language-markup">y</code> • (optional) The y axis of the coordinate for the text block starting point.
+
+<code class="language-markup">style</code> • The style object.
 
 <pre><code class="language-javascript">origami('.one')
   .text("Nice!", 100, 100, {
