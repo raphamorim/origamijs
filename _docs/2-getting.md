@@ -3,11 +3,12 @@ title: getting
 jpn: 取得
 layout: docs
 order: 2
+description: First of all, get Origami.js using Download Option or via package manager
 ---
 
 # Getting
 
-First of all, get Origami.js using [Download Option]({{ site.downloadLink }}) or via bower.
+First of all, get Origami.js using [Download Option]({{ site.downloadLink }}) or via package manager.
 
 To get using Bower just run this command
 
