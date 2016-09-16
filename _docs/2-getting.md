@@ -22,5 +22,5 @@ Add the source before body tag end:
 &#60;/body&#62;</code></pre>
 
 <div class="read-wrapper">
-    <a href="../3-usage" class="btn btn-read">Getting</a>
+    <a href="../3-basic-usage" class="btn btn-read">Basic Usage</a>
 </div>
