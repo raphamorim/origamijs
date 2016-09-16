@@ -1,6 +1,5 @@
 ---
 title: why
-jpn: なぜ
 topics:
     - styling-with-css
     - component-ecosystem

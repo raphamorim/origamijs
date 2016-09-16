@@ -1,7 +1,6 @@
 ---
 title: animation
 layout: docs
-jpn: アニメーション
 topics:
   - examples
 order: 4
