@@ -86,5 +86,5 @@ Available for the following methods: rect, arc, image
 </code></pre>
 
 <div class="read-wrapper">
-    <a href="../2-getting" class="btn btn-read">Getting</a>
+    <a href="../2-getting" class="btn btn-read">Read Getting Guide</a>
 </div>
