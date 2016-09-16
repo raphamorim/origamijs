@@ -6,6 +6,9 @@
     z-index: 10;
     top: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .sidebar-nav {
         margin-top: 5rem;
@@ -27,7 +30,7 @@
 
 .origami_icon {
     text-align: center;
-    margin-top: 60px;
+    // margin-top: 60px;
 
     .origami_icon-rotate {
         // animation: spin linear 2s 1;
