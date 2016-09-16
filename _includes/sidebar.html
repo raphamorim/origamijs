@@ -4,7 +4,7 @@
 
         <div class="sidebar-nav">
         {% for doc in site.docs %}
-            <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title }}" class="sidebar-link">
+            <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
                 <h2>{{ doc.title }}</h2>
             </a>
         {% endfor %}

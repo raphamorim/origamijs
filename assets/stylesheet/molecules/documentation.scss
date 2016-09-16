@@ -2,6 +2,7 @@
     margin: 0 auto;
     width: 860px;
     margin-left: 420px;
+    margin-bottom: 100px;
 
     h1 {
         font-size: 40px;
@@ -42,7 +43,6 @@
 .menu-navigation {
     list-style-type: none;
     padding: 0;
-    overflow-x: hidden;
     margin-top: 30px;
 
     li {
@@ -50,13 +50,28 @@
         color: transparent;
         margin-bottom: 25px;
         clear: both;
-        border-bottom: 1px dotted #af79a5;
 
         a.title {
             text-transform: uppercase;
-            font-family: "Montserrat-Bold";
             font-size: 20px;
+            color: #af79a5;
+            font-family: "Montserrat-Regular";
             text-decoration: none;
+            border-bottom: 2px dotted #af79a5;
+        }
+    }
+
+    &.sub {
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &.sub li {
+        margin-bottom: 25px;
+
+        a.title {
+            font-size: 14px;
         }
     }
 }
