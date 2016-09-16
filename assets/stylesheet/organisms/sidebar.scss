@@ -2,9 +2,27 @@
     background-color: $purple;
     width: 300px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
+    bottom: 0;
+
+    .sidebar-nav {
+        margin-top: 5rem;
+    }
+
+    .sidebar-link {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: right;
+
+        h2 {
+            margin-right: 2rem;
+        }
+    }
 }
 
 .origami_icon {
