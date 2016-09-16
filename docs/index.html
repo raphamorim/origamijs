@@ -19,7 +19,7 @@ class: docs
 {% for doc in site.docs %}
     <li>
         <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
-            {{ doc.order }}: {{ doc.title }} - {{ doc.jpn }}
+            {{ doc.order }}: {{ doc.title }}
         </a>
         {% if doc.topics.size > 0 %}
         <ul class="menu-navigation sub">

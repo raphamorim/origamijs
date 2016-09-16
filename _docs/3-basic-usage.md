@@ -1,7 +1,6 @@
 ---
 title: basic usage
 layout: docs
-jpn: 基本的な使用法
 order: 3
 description: Origamijs Basic Usage
 ---
@@ -27,6 +26,25 @@ Method that performs the operation of drawing. If you forget to use, nothing wil
 </div>
 
 ## Rect
+
+Creates a path for a rectangle at position (x, y) with a size that is determined by width and height.
+
+
+<pre><code class="language-javascript">octx.rect(x, y, width, height)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">x</code> • The x axis of the coordinate for the rectangle starting point.
+
+<code class="language-markup">y</code> • The y axis of the coordinate for the rectangle starting point.
+
+<code class="language-markup">width</code> • The rectangle's width.
+
+<code class="language-markup">height</code> • The rectangle's height.
+
+<code class="language-markup">style</code> • The style object.
+
+
 
 <pre><code class="language-javascript">origami('.canvas')
   .rect(10, 10, 50, 100, {

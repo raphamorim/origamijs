@@ -1,6 +1,5 @@
 ---
 title: getting
-jpn: 取得
 layout: docs
 order: 2
 description: First of all, get Origami.js using Download Option or via package manager
