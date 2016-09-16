@@ -7,6 +7,7 @@ topics:
     - smart-coordinates
 layout: docs
 order: 1
+description: "For many developers, learning the canvas API can be challenging. But the learning curve might be reduced with a few simplifications; a chainable canvas, stylization of objects using familiar CSS notation, and easy access to the context using selectors."
 ---
 
 # Why?
