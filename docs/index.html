@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Docs
+description: Initially it's a tool for teaching geometry, web and javascript in schools. Currently it's a powerful library to create using HTML5 Canvas. Origami.js is really impressive that suitable for lightweight canvas drawing or image manipulating.
 class: docs
-description: Origami.js Documentation
 ---
 
 <h1>Origamijs Documentation</h1>
@@ -19,14 +19,14 @@ description: Origami.js Documentation
 {% for doc in site.docs %}
     <li>
         <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
-            {{ doc.title }} - {{ doc.jpn }}
+            {{ doc.order }}: {{ doc.title }} - {{ doc.jpn }}
         </a>
         {% if doc.topics.size > 0 %}
         <ul class="menu-navigation sub">
         {% for topic in doc.topics %}
             <li>
                 <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}#{{topic}}" class="sidebar-link">
-                    > {{ topic }}
+                    {{ doc.order }}.{{ forloop.index }}: {{ topic }}
                 </a>
             </li>
         {% endfor %}
