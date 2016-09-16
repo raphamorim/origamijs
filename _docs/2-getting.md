@@ -1,5 +1,6 @@
 ---
 title: getting
+jpn: 取得
 layout: docs
 order: 2
 ---

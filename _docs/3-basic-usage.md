@@ -1,6 +1,7 @@
 ---
 title: basic usage
 layout: docs
+jpn: 基本的な使用法
 order: 3
 ---
 
