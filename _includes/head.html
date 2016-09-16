@@ -7,12 +7,24 @@
         {% if page.title %}{{ page.title | capitalize }} - {{ site.title }}
         {% else %}{{ site.title }}{% endif %}
     </title>
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 240 }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title | capitalize }} - {{ site.title }} {% else %}{{ site.title }}{% endif %}"/>
+    <meta property="og:type" content="site"/>
+    <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}"/>
+    <meta property="og:image" content="{{site.url}}{% if page.image %}/{{page.image}}{%else%}/assets/images/logo-origami-share.png{% endif %}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 240 }}{% else %}{{ site.description }}{% endif %}"/>
+    <meta property="fb:admins" content="100001780434348" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | capitalize }} - {{ site.title }} {% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 240 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}">
+    <meta name="twitter:image" content="{{site.url}}{% if page.image %}/{{page.image}}{%else%}/assets/images/logo-origami-share.png{% endif %}"/>
+
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}assets/images/favicon.png" type="image/x-icon">
