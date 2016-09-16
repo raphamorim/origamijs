@@ -37,6 +37,7 @@ pre[class*="language-"] {
     margin: .5em 0;
     overflow: auto;
     padding: 1em;
+    max-width: 750px;
 }
 
 pre[class*="language-"]::-moz-selection {
