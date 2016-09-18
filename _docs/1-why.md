@@ -85,5 +85,5 @@ Available for the following methods: rect, arc, image
 </code></pre>
 
 <div class="read-wrapper">
-    <a href="../2-getting" class="btn btn-read">Read Getting Started</a>
+    <a href="../2-getting-started" class="btn btn-read">Read Getting Started</a>
 </div>

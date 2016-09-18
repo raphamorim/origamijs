@@ -18,17 +18,18 @@ Method that performs the operation of drawing the current <code class="language-
 <code class="language-markup">delay</code> • (optional) Execute after a specified number of milliseconds. Tip: 1000 ms = 1 second.
 
 <pre><code class="language-javascript">origami('#canvas')
-  .arc(100, 75, 50, {
-    background: '#2A80B9',
-    borderSize: '4px',
-    borderColor: 'gold',
-    borderStyle: 'dotted' })
+  .background('#330031')
+  .arc('center', 'center', 50, {
+      background: '#180019',
+      borderSize: '4px',
+      borderColor: '#FFF',
+      borderStyle: 'dotted'
+  })
   .draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/arc.png" alt="Draw Example"/>
+<div class="example dark">
+    <canvas id="draw"></canvas>
 </div>
 
 ## Rect
@@ -50,20 +51,22 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
 <code class="language-markup">style</code> • The style object.
 
 <pre><code class="language-javascript">origami('.canvas')
-  .rect(10, 10, 50, 100, {
+  .rect(80, 60, 50, 100, {
     background: 'lightblue',
     border: '4px solid #999'
   })
-  .rect(50, 10, 40, {
-    background: 'lightgreen',
-    border: '10px solid green'
+  .rect(150, 70, 40, {
+      background: 'lightgreen',
+      border: '4px dashed green'
   })
-  .draw();
+  .rect(20, 70, 40, 80, {
+      background: '#330031',
+      border: '10px dotted #af79a5'
+  }).draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/rect.png" alt="Rect Example"/>
+<div class="example">
+    <canvas id="rect"></canvas>
 </div>
 
 ## Line
@@ -78,15 +81,20 @@ Connects the points (for each point argument) in the sub-path to the x, y coordi
 
 <code class="language-markup">style</code> • The style object.
 
-<pre><code class="language-javascript">origami('.one')
-  .line({x: 10, y: 10}, {x: 150, y: 200},
-    {border: '1px dashed #888'})
+<pre><code class="language-javascript">var styleLine = {
+  border: '2px dotted #E40068'
+};
+
+origami('canvas#line')
+  .line({x: 40, y: 50}, {x: 200, y: 50},  styleLine)
+  .line({x: 40, y: 50}, {x: 300, y: 70},  styleLine)
+  .line({x: 40, y: 50}, {x: 400, y: 100}, styleLine)
+  .line({x: 40, y: 50}, {x: 500, y: 140}, styleLine)
   .draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/line.png" alt="Line Example"/>
+<div class="example">
+    <canvas id="line"></canvas>
 </div>
 
 ## Arc
@@ -111,19 +119,26 @@ Adds an arc to the path which is centered at (x, y) position with radius r start
 
 <code class="language-markup">anticlockwise</code> • (optional) If true, causes the arc to be drawn counter-clockwise between the two angles. By default it's drawn clockwise.
 
-<pre><code class="language-javascript">var style = {
-  background: '#2A80B9',
-  border: '4px dotted gold'
-}
-
-origami('.element')
-  .arc(100, 75, 50, style)
+<pre><code class="language-javascript">
+origami('canvas#arc')
+  .background('#720034')
+  .arc(200, 100, 80, {
+    background: '#E40068',
+    border: '10px solid #E9E9E9'
+  })
+  .arc(400, 100, 80, {
+    background: '#E40068',
+    border: '8px dotted #E9E9E9'
+  })
+  .arc(300, 100, 80, {
+    background: '#E40068',
+    border: '6px dashed #E9E9E9'
+  })
   .draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/arc.png" alt="Arc Example"/>
+<div class="example dark">
+  <canvas id="arc"></canvas>
 </div>
 
 ## Polygon
@@ -271,7 +286,7 @@ origami(ctx).canvasBackground('blue');
 
 Sets the type of compositing operation to apply when drawing new shapes, where type is a string identifying which of the compositing or blending mode operations to use.
 
-Alias to <code class="language-javascript">CanvasRenderingContext2Dcanvas.globalCompositeOperation</code> 
+Alias to <code class="language-javascript">CanvasRenderingContext2Dcanvas.globalCompositeOperation</code>
 
 Default is **source-over**.
 
