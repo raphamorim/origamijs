@@ -10,6 +10,7 @@ body {
 	background-color: $white;
     margin: 0px;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body.home {
