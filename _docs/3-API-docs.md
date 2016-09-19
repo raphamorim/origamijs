@@ -17,6 +17,10 @@ Method that performs the operation of drawing the current <code class="language-
 
 <code class="language-markup">delay</code> • (optional) Execute after a specified number of milliseconds. Tip: 1000 ms = 1 second.
 
+<div class="example dark">
+  <canvas id="draw"></canvas>
+</div>
+
 <pre><code class="language-javascript">origami('#canvas')
   .background('#330031')
   .arc('center', 'center', 50, {
@@ -27,10 +31,6 @@ Method that performs the operation of drawing the current <code class="language-
   })
   .draw();
 </code></pre>
-
-<div class="example dark">
-    <canvas id="draw"></canvas>
-</div>
 
 ## Rect
 
@@ -50,6 +50,10 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
 
 <code class="language-markup">style</code> • The style object.
 
+<div class="example">
+  <canvas id="rect"></canvas>
+</div>
+
 <pre><code class="language-javascript">origami('.canvas')
   .rect(80, 60, 50, 100, {
     background: 'lightblue',
@@ -65,10 +69,6 @@ Creates a path for a rectangle at position (x, y) with a size that is determined
   }).draw();
 </code></pre>
 
-<div class="example">
-    <canvas id="rect"></canvas>
-</div>
-
 ## Line
 
 Connects the points (for each point argument) in the sub-path to the x, y coordinates with a straight line.
@@ -81,6 +81,10 @@ Connects the points (for each point argument) in the sub-path to the x, y coordi
 
 <code class="language-markup">style</code> • The style object.
 
+<div class="example">
+  <canvas id="line"></canvas>
+</div>
+
 <pre><code class="language-javascript">var styleLine = {
   border: '2px dotted #E40068'
 };
@@ -92,10 +96,6 @@ origami('canvas#line')
   .line({x: 40, y: 50}, {x: 500, y: 140}, styleLine)
   .draw();
 </code></pre>
-
-<div class="example">
-    <canvas id="line"></canvas>
-</div>
 
 ## Arc
 
@@ -119,6 +119,10 @@ Adds an arc to the path which is centered at (x, y) position with radius r start
 
 <code class="language-markup">anticlockwise</code> • (optional) If true, causes the arc to be drawn counter-clockwise between the two angles. By default it's drawn clockwise.
 
+<div class="example dark">
+  <canvas id="arc"></canvas>
+</div>
+
 <pre><code class="language-javascript">origami('canvas#arc')
   .background('#720034')
   .arc(200, 100, 80, {
@@ -136,10 +140,6 @@ Adds an arc to the path which is centered at (x, y) position with radius r start
   .draw();
 </code></pre>
 
-<div class="example dark">
-  <canvas id="arc"></canvas>
-</div>
-
 ## Polygon
 
 Connects the points (for each point argument) in the sub-path to the x, y coordinates with a transparent line, on the draw process will fill the generated shape.
@@ -152,18 +152,21 @@ Connects the points (for each point argument) in the sub-path to the x, y coordi
 
 <code class="language-markup">style</code> • The style object.
 
-<pre><code class="language-javascript">origami('.one')
-  .polygon({x: 100, y: 110}, {x: 200, y: 10}, {x: 300, y: 110}, {
-    background: '#2A80B9' })
+<div class="example">
+  <canvas id="polygon"></canvas>
+</div>
+
+<pre><code class="language-javascript">origami('canvas#polygon')
+  .polygon({x: 200, y: 160}, {x: 300, y: 40}, {x: 400, y: 160}, 
+    {background: '#2A80B9'})
   .draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/polygon.png" alt="Polygon Example"/>
-</div>
-
 ## Border
+
+<div class="example">
+  <canvas id="border"></canvas>
+</div>
 
 <pre><code class="language-javascript">origami('#canvas')
   .border({
@@ -172,22 +175,24 @@ Connects the points (for each point argument) in the sub-path to the x, y coordi
   .draw();
 </code></pre>
 
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/border.png" alt="Border Example"/>
-</div>
-
 ## Shape
+
+<div class="example">
+  <canvas id="shape"></canvas>
+</div>
 
 CSS properties:
 
 <pre><code class="language-css">.pac-man {
+  position: absolute;
+  top: 40px;
+  left: 20%;
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid red;
-  border-bottom: 60px solid red;
-  border-left: 60px solid red;
+  border-top: 60px solid #330031;
+  border-bottom: 60px solid #330031;
+  border-left: 60px solid #330031;
   border-top-right-radius: 60px;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
@@ -201,11 +206,6 @@ Load Styles and apply style rules on Shape (empty object canvas):
   .shape('.pac-man')
   .draw();
 </code></pre>
-
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/shape.png" alt="Shape Example"/>
-</div>
 
 ## Text
 
@@ -223,19 +223,29 @@ Fills a given text at the given (x,y) position.
 
 <code class="language-markup">style</code> • The style object.
 
-<pre><code class="language-javascript">origami('.one')
-  .text("Nice!", 100, 100, {
-    color: '#000',
-    font: '70px Helvetica',
+<div class="example dark">
+  <canvas id="text"></canvas>
+</div>
+
+<pre><code class="language-javascript">origami('canvas#text')
+  .background('#720034')
+  .text("Canvas", 140, 180, {
+    color: '#E40068',
+    font: '60px Helvetica',
     align: 'center',
-    border: '2px solid gold'
+    border: '2px solid #330031'
+  })
+  .text("Rocks!!", 480, 180, {
+    color: '#330031',
+    font: '140px Helvetica',
+    align: 'center',
+    border: '2px dotted #E40068'
+  })
+  .text("origamijs", 120, 115, {
+    color: '#FFF',
+    font: '50px Arial'
   })
   .draw()</code></pre>
-
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/text.png" alt="Text Example"/>
-</div>
 
 ## Image
 
@@ -317,6 +327,10 @@ Default: <code class="language-markup">horizontal</code>
 
 Options: <code class="language-markup">vertical</code>, <code class="language-markup">horizontal</code>
 
+<div class="example">
+  <canvas id="flip-image"></canvas>
+</div>
+
 <pre><code class="language-javascript">origami('#demo-1')
   .image('images/person.jpg', 0, 0, 200, 200)
   .flip('horizontal')
@@ -329,16 +343,6 @@ Options: <code class="language-markup">vertical</code>, <code class="language-ma
     canvas.draw();
   })
 </code></pre>
-
-<div class="result">
-    <p>Original Image:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/flip-original.jpg" alt="Original Image"/>
-</div>
-
-<div class="result">
-    <p>Result:</p>
-    <img src="{{ site.baseurl }}assets/images/examples/flip.png" alt="Flipped Image"/>
-</div>
 
 ## Rotate
 

@@ -40,7 +40,9 @@
         &:hover {
             color: $turquoise;
         }
+
     }
+
 }
 
 .menu-navigation {
@@ -62,6 +64,7 @@
             text-decoration: none;
             border-bottom: 2px dotted #af79a5;
         }
+
     }
 
     &.sub {
@@ -76,7 +79,9 @@
         a.title {
             font-size: 14px;
         }
+
     }
+
 }
 
 .example {
@@ -113,4 +118,20 @@
 
 .example.dark:after {
     color: #FFF;
+}
+
+.pac-man {
+    position: absolute;
+    top: 40px;
+    left: 20%;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #330031;
+    border-bottom: 60px solid #330031;
+    border-left: 60px solid #330031;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
