@@ -119,8 +119,7 @@ Adds an arc to the path which is centered at (x, y) position with radius r start
 
 <code class="language-markup">anticlockwise</code> • (optional) If true, causes the arc to be drawn counter-clockwise between the two angles. By default it's drawn clockwise.
 
-<pre><code class="language-javascript">
-origami('canvas#arc')
+<pre><code class="language-javascript">origami('canvas#arc')
   .background('#720034')
   .arc(200, 100, 80, {
     background: '#E40068',
