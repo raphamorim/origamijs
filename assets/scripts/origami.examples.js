@@ -1,4 +1,22 @@
 if (document.body.classList.contains('api-docs')) {
+  origami('canvas#flip-image')
+    .image('/assets/images/favicon.png', 0, 0, 100, 100)
+    .flip('horizontal')
+    .image('/assets/images/favicon.png', 0, 220, 100, 100)
+    .flipEnd()
+    .flip('vertical')
+    .image('/assets/images/favicon.png', 220, 0, 100, 100)
+    .flipEnd()
+    .load(function(octx) {
+      octx.draw();
+    })
+
+  origami('canvas#image')
+    .image('/assets/images/favicon.png', 300, 50, 100, 100)
+    .load(function(octx) {
+      octx.draw();
+    })
+
   origami('canvas#draw')
     .background('#330031')
     .arc('center', 'center', 50, {
@@ -85,17 +103,5 @@ if (document.body.classList.contains('api-docs')) {
       font: '50px Arial'
     })
     .draw();
-
-  origami('canvas#flip-image')
-    .image('/assets/images/favicon.png', 0, 0, 200, 200)
-    .flip('horizontal')
-    .image('/assets/images/favicon.png', 0, 220, 200, 200)
-    .flipEnd()
-    .flip('vertical')
-    .image('/assets/images/favicon.png', 220, 0)
-    .flipEnd()
-    .load(function(octx) {
-      octx.draw();
-    })
 }
 

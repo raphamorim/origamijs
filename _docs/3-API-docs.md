@@ -249,12 +249,30 @@ Fills a given text at the given (x,y) position.
 
 ## Image
 
-<pre><code class="language-javascript">var img = document.querySelector('#my-image');
+<pre><code class="language-javascript">octx.text(imgSrc, x, y, width, height)</code></pre>
+
+**Parameters**
+
+<code class="language-markup">imgSrc</code> • The Image source.
+
+<code class="language-markup">x</code> • (optional) The x axis of the coordinate for the image block starting point.
+
+<code class="language-markup">y</code> • (optional) The y axis of the coordinate for the image block starting point.
+
+<code class="language-markup">width</code> • The image width.
+
+<code class="language-markup">height</code> • The image height.
+
+<div class="example">
+  <canvas id="image"></canvas>
+</div>
+
+<pre><code class="language-javascript">origami('.canvas').image('images/origamijs.png', 10, 10)
+
+// Or
+var img = document.querySelector('#my-image');
 origami('.canvas').image(img, 10, 10, width, height)
-
-// OR
-
-origami('.canvas').image('images/dog.jpg', 10, 10)</code></pre>
+</code></pre>
 
 ## Load
 
