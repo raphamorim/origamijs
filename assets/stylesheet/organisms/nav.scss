@@ -7,9 +7,13 @@
 	width: 100%;
 }
 
+.container.nav {
+    max-width: 80em;
+}
+
 @media screen and (min-width: 840px) {
   .navigation {
-		margin-top: 40px;
+		margin-top: 55px;
 		padding: 0;
 	}
 }

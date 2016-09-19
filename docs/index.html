@@ -13,25 +13,6 @@ class: docs
 
 <p>Want to contribute? Fix or Adjust something? <a href="https://github.com/raphamorim/origamijs.com">Here's the place</a>.</p>
 
-<h2>Summary</h2>
-
-<ul class="menu-navigation">
-{% for doc in site.docs %}
-    <li>
-        <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
-            {{ doc.order }}: {{ doc.title }}
-        </a>
-        {% if doc.topics.size > 0 %}
-        <ul class="menu-navigation sub">
-        {% for topic in doc.topics %}
-            <li>
-                <a class="title" href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}#{{topic}}" class="sidebar-link">
-                    {{ doc.order }}.{{ forloop.index }}: {{ topic }}
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
-        {% endif %}
-    </li>
-{% endfor %}
-</ul>
+<div class="read-wrapper">
+    <a href="1-why-origamijs" class="btn btn-read">Why Origamijs</a>
+</div>

@@ -32,11 +32,14 @@
     }
 
     p > a {
-        color: #af79a5;
+        color: $purple;
         font-family: "Montserrat-Regular";
         text-decoration: none;
         padding-bottom: 3px;
-        border-bottom: 2px solid #af79a5;
+
+        &:hover {
+            color: $turquoise;
+        }
     }
 }
 
