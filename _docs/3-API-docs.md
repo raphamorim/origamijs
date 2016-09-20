@@ -2,7 +2,7 @@
 title: API docs
 layout: docs
 order: 3
-description: Origamijs Basic Usage
+description: Origamijs Basic Usage. Origamijs is a Powerful and Lightweight Library to create using HTML5 Canvas.
 ---
 
 # API Docs
@@ -157,7 +157,7 @@ Connects the points (for each point argument) in the sub-path to the x, y coordi
 </div>
 
 <pre><code class="language-javascript">origami('canvas#polygon')
-  .polygon({x: 200, y: 160}, {x: 300, y: 40}, {x: 400, y: 160}, 
+  .polygon({x: 200, y: 160}, {x: 300, y: 40}, {x: 400, y: 160},
     {background: '#2A80B9'})
   .draw();
 </code></pre>

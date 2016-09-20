@@ -4,7 +4,7 @@ layout: docs
 topics:
   - obtaining-origamijs
 order: 2
-description: First of all, get Origami.js using Download Option or via package manager
+description: First of all, get Origami.js using Download Option or via package manager. Origamijs is a powerful and Lightweight Library to create using HTML5 Canvas.
 ---
 
 # Getting Started

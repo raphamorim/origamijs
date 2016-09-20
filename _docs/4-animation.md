@@ -4,7 +4,7 @@ layout: docs
 topics:
   - examples
 order: 4
-description: Origamijs Animation Methods
+description: Animation Guide - Origamijs is a Powerful and Lightweight Library to create using HTML5 Canvas
 ---
 
 # Animation
