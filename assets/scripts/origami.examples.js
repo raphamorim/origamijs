@@ -1,11 +1,11 @@
 if (document.body.classList.contains('api-docs')) {
   origami('canvas#flip-image')
-    .image('/assets/images/favicon.png', 0, 0, 100, 100)
+    .image('/assets/images/examples/megaman.png', 20, 50, 120, 120)
     .flip('horizontal')
-    .image('/assets/images/favicon.png', 0, 220, 100, 100)
+    .image('/assets/images/examples/megaman.png', 150, 50, 120, 120)
     .flipEnd()
     .flip('vertical')
-    .image('/assets/images/favicon.png', 220, 0, 100, 100)
+    .image('/assets/images/examples/megaman.png', 280, 50, 120, 120)
     .flipEnd()
     .load(function(octx) {
       octx.draw();
@@ -69,7 +69,7 @@ if (document.body.classList.contains('api-docs')) {
     .draw();
 
   origami('canvas#polygon')
-    .polygon({x: 200, y: 160}, {x: 300, y: 40}, {x: 400, y: 160}, 
+    .polygon({x: 200, y: 160}, {x: 300, y: 40}, {x: 400, y: 160},
       {background: '#2A80B9'})
     .draw();
 
@@ -105,3 +105,45 @@ if (document.body.classList.contains('api-docs')) {
     .draw();
 }
 
+if (document.body.classList.contains('animation')) {
+  origami('canvas#sprite')
+    .background('#2A80B9')
+    .sprite(310, 50, {
+      src: '/assets/images/examples/coin-sprite.png',
+      frames: 10,
+      speed: 60,
+      loop: true
+    })
+    .draw();
+
+  function draw() {
+    origami('canvas#animation-1')
+      .background('black')
+      .composition('destination-over')
+      .clear()
+      .save()
+      .translate(350,150)
+      .rotate('slow')
+      .translate(105,0)
+      .image('/assets/images/examples/Canvas_earth.png', -12, -12)
+      .restore()
+      .arc(350,150,105, {
+        border: '1px solid #FFF'
+      })
+      .image('/assets/images/examples/Canvas_sun.png', 200, 0)
+      .load(function(octx){
+        octx.draw()
+        octx.nextFrame(draw);
+        // octx.on('mouseover', function() {
+        //   console.log(1);
+        //   octx.nextFrame(draw);
+        // });
+        // octx.on('mouseout', function() {
+        //   console.log(2);
+        //   octx.stop(draw);
+        // });
+      })
+  }
+
+  draw();
+}

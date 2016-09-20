@@ -96,24 +96,28 @@
     align-items: center;
     overflow: hidden;
     justify-content: center;
-}
 
-.example canvas {
-    position: relative;
-    width: 750px;
-    height: 200px;
-}
+    canvas {
+        position: relative;
+        width: 750px;
+        height: 200px;
+    }
 
-.example:after {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #959595;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    content: "Example";
+    &.mid canvas {
+        height: 300px;
+    }
+
+    &:after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #959595;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        content: "Example";
+    }
 }
 
 .example.dark:after {
