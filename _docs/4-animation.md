@@ -30,7 +30,9 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
     frames: 10,
     speed: 60,
     loop: true
-  }).draw();</code></pre>
+  }).load(function(octx){
+    octx.draw();
+  })</code></pre>
 
 ## Start Render
 
@@ -65,7 +67,7 @@ If you want to play the stopped animation, you must to use <code class="language
     .clear()
     .save()
     .translate(350,150)
-    .rotate('normal')
+    .rotate('slow')
     .translate(105,0)
     .image('/assets/images/examples/Canvas_earth.png', -12, -12)
     .restore()

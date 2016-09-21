@@ -113,8 +113,9 @@ if (document.body.classList.contains('animation')) {
       frames: 10,
       speed: 60,
       loop: true
+    }).load(function(octx){
+      octx.draw();
     })
-    .draw();
 
   function draw() {
     origami('canvas#animation-1')
@@ -123,7 +124,7 @@ if (document.body.classList.contains('animation')) {
       .clear()
       .save()
       .translate(350,150)
-      .rotate('normal')
+      .rotate('slow')
       .translate(105,0)
       .image('/assets/images/examples/Canvas_earth.png', -12, -12)
       .restore()
