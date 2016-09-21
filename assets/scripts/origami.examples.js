@@ -123,7 +123,7 @@ if (document.body.classList.contains('animation')) {
       .clear()
       .save()
       .translate(350,150)
-      .rotate('slow')
+      .rotate('normal')
       .translate(105,0)
       .image('/assets/images/examples/Canvas_earth.png', -12, -12)
       .restore()
@@ -132,18 +132,19 @@ if (document.body.classList.contains('animation')) {
       })
       .image('/assets/images/examples/Canvas_sun.png', 200, 0)
       .load(function(octx){
-        octx.draw()
-        octx.nextFrame(draw);
-        // octx.on('mouseover', function() {
-        //   console.log(1);
-        //   octx.nextFrame(draw);
-        // });
-        // octx.on('mouseout', function() {
-        //   console.log(2);
-        //   octx.stop(draw);
-        // });
+        octx.startRender(draw);
       })
   }
 
   draw();
+
+  // setTimeout(function(){
+  //   origami('canvas#animation-1').stopRender();
+  //   origami('canvas#animation-1').on('mouseover', function(octx) {
+  //     origami('canvas#animation-1').play().startRender(draw);
+  //   });
+  //   origami('canvas#animation-1').on('mouseout', function(octx) {
+  //     origami('canvas#animation-1').stopRender();
+  //   });
+  // }, 3000);
 }

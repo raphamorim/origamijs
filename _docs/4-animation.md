@@ -32,17 +32,21 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
     loop: true
   }).draw();</code></pre>
 
-## NextFrame
+## Start Render
 
 Causes execution of a callback (using <code class="language-javascript">requestAnimationFrame</code>).
 
-<pre><code class="language-javascript">origami('#demo-1').nextFrame(frame)</code></pre>
+<pre><code class="language-javascript">origami('#demo-1').startRender(frame)</code></pre>
 
-## StopFrame
+## Stop Render
 
-Stop frame animation
+Stop rendering animation
 
-<pre><code class="language-javascript">origami('#demo-1').stop(frame)</code></pre>
+<pre><code class="language-javascript">origami('#demo-1').stopRender()</code></pre>
+
+If you want to play the stopped animation, you must to use <code class="language-javascript">able</code> method before <code class="language-javascript">startRender</code>, example:
+
+<pre><code class="language-javascript">origami('#demo-1').play().startRender(frame)</code></pre>
 
 # Examples
 
@@ -61,7 +65,7 @@ Stop frame animation
     .clear()
     .save()
     .translate(350,150)
-    .rotate('slow')
+    .rotate('normal')
     .translate(105,0)
     .image('/assets/images/examples/Canvas_earth.png', -12, -12)
     .restore()
@@ -69,9 +73,8 @@ Stop frame animation
       border: '1px solid #FFF'
     })
     .image('/assets/images/examples/Canvas_sun.png', 200, 0)
-    .load(function(canvas){
-      canvas.draw()
-      canvas.nextFrame(draw)
+    .load(function(octx){
+      octx.startRender(draw);
     })
 }
 
