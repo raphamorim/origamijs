@@ -118,26 +118,32 @@ if (document.body.classList.contains('animation')) {
     })
 
   function draw() {
-    origami('canvas#animation-1')
-      .background('black')
-      .composition('destination-over')
-      .clear()
-      .save()
-      .translate(350,150)
-      .rotate('slow')
-      .translate(105,0)
-      .image('/assets/images/examples/Canvas_earth.png', -12, -12)
-      .restore()
-      .arc(350,150,105, {
+      origami('canvas#animation-1')
+        .background('black')
+        .composition('destination-over')
+        .clear()
+        .save()
+        .translate(370,150)
+        .rotate('slow')
+        .translate(105,0)
+        .image('/assets/images/examples/Canvas_earth.png', -12, -12)
+        .save()
+        .restore()
+        .save()
+        .rotate('fast')
+        .translate(0, 28.5)
+        .image('/assets/images/examples/Canvas_moon.png', -3.5, -3.5)
+        .restore()
+        .restore()
+        .arc(370,150,105, {
         border: '1px solid #FFF'
-      })
-      .image('/assets/images/examples/Canvas_sun.png', 200, 0)
-      .load(function(octx){
+      }) .image('/assets/images/examples/Canvas_sun.png', 220, 0)
+        .load(function(octx){
         octx.startRender(draw);
       })
-  }
+    }
 
-  draw();
+    draw();
 
   // setTimeout(function(){
   //   origami('canvas#animation-1').stopRender();

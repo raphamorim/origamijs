@@ -66,18 +66,24 @@ If you want to play the stopped animation, you must to use <code class="language
     .composition('destination-over')
     .clear()
     .save()
-    .translate(350,150)
+    .translate(370,150)
     .rotate('slow')
     .translate(105,0)
-    .image('/assets/images/examples/Canvas_earth.png', -12, -12)
+    .image('images/Canvas_earth.png', -12, -12)
+    .save()
     .restore()
-    .arc(350,150,105, {
-      border: '1px solid #FFF'
-    })
-    .image('/assets/images/examples/Canvas_sun.png', 200, 0)
+    .save()
+    .rotate('fast')
+    .translate(0, 28.5)
+    .image('images/Canvas_moon.png', -3.5, -3.5)
+    .restore()
+    .restore()
+    .arc(370,150,105, {
+    border: '1px solid #FFF'
+  }) .image('images/Canvas_sun.png', 220, 0)
     .load(function(octx){
-      octx.startRender(draw);
-    })
+    octx.startRender(draw);
+  })
 }
 
 draw();</code></pre>
