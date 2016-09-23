@@ -107,6 +107,10 @@
         height: 300px;
     }
 
+    &.expanded canvas {
+        height: 550px;
+    }
+
     &:after {
         position: absolute;
         top: 15px;
@@ -117,6 +121,12 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         content: "Example";
+    }
+
+    &.pure {
+        &:after{
+            display: none;
+        }
     }
 }
 

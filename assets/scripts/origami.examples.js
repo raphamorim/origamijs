@@ -149,3 +149,15 @@ if (document.body.classList.contains('animation')) {
   //   });
   // }, 3000);
 }
+
+if (document.body.classList.contains('charts')) {
+  origami('canvas#chart-line')
+    .chartLine({
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        data: [65, 59, 40, 31, 56, 30, 60],
+        points: true,
+        pointsColor: "red",
+        line: "1px dashed #000",
+    })
+    .draw();
+}
