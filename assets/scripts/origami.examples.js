@@ -154,10 +154,27 @@
 
   origami('canvas#chart-line')
     .chartLine({
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        data: [65, 59, 40, 31, 56, 30, 60],
-        points: true,
-        pointsColor: "red",
-        line: "1px dashed #000",
-    })
-    .draw();
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          data: [1, 9, 8, 71, 56, 30, 60],
+          line: "2px solid pink",
+        },
+        {
+          data: [21, 29, 30, 25, 43, 50, 80],
+          points: true,
+          pointsColor: "purple",
+          line: "4px dotted purple",
+        },
+        {
+          data: [90, 40, 20, 10, 15, 18, 0],
+          line: "1px dashed orange",
+        },
+        {
+          data: [10, 60, 50, 80],
+          points: true,
+          pointsColor: "green",
+          line: "1px dotted green",
+        }
+      ]
+  }).draw();
