@@ -2,6 +2,7 @@
 title: animation
 layout: docs
 topics:
+  - sprite
   - examples
 order: 4
 description: Animation Guide - Origamijs is a Powerful and Lightweight Library to create using HTML5 Canvas

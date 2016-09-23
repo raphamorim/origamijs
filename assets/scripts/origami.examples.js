@@ -1,4 +1,4 @@
-if (document.body.classList.contains('api-docs')) {
+if (document.body.classList.contains('shapes')) {
   origami('canvas#flip-image')
     .image('/assets/images/examples/megaman.png', 20, 50, 120, 120)
     .flip('horizontal')
