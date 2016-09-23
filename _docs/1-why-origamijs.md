@@ -83,7 +83,3 @@ Available for the following methods: rect, arc, image
 
   .draw();
 </code></pre>
-
-<div class="read-wrapper">
-    <a href="../2-getting-started" class="btn btn-read">Read Getting Started</a>
-</div>
