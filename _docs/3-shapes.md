@@ -402,7 +402,3 @@ Wrapper to <code class="language-javascript">addEventListener</code>
 function clickEvent(e) {
   console.log(e.pageX, e.pageY);
 }</code></pre>
-
-<div class="read-wrapper">
-    <a href="../4-animation" class="btn btn-read">Read Animation Guide</a>
-</div>

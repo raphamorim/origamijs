@@ -25,7 +25,3 @@ Add the source before body tag end:
 
 <pre><code class="language-markup">&#60;script src="origami.min.js"></script&#62;
 &#60;/body&#62;</code></pre>
-
-<div class="read-wrapper">
-    <a href="../3-shapes" class="btn btn-read">Read about Shapes</a>
-</div>

@@ -88,7 +88,3 @@ If you want to play the stopped animation, you must to use <code class="language
 }
 
 draw();</code></pre>
-
-<div class="read-wrapper">
-    <a href="../5-charts" class="btn btn-read">Read Charts Guide</a>
-</div>

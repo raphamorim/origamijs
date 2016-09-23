@@ -2,23 +2,17 @@
     <div class="origami_icon">
         <a href="{{ site.url }}"><img src="/assets/images/logo-origami-outline.svg" alt="logo" class="origami_icon-rotate"></a>
     </div>
-    <!-- <div class="sidebar-nav">
-    {% for doc in site.docs %}
-        <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
-            <h2>{{ doc.title }}</h2>
-        </a>
-    {% endfor %} -->
 
     <div class="sidebar-nav">
     {% for doc in site.docs %}
         <div class="sidebar-nav--item">
-            <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
+            <a href="#{{ doc.title | replace: ' ', '-' }}" class="sidebar-link">
                 <h2>{{ doc.title }}</h2>
             </a>
             {% if doc.topics.size > 0 %}
                 {% for topic in doc.topics %}
                     <p>
-                        <a href="{{ site.url }}/docs/{{ doc.order }}-{{ doc.title | replace: ' ', '-' }}#{{topic}}" class="sidebar-link subtopic">
+                        <a href="#{{topic}}" class="sidebar-link subtopic">
                             {{ topic | replace: '-', ' ' }}
                         </a>
                     </p>

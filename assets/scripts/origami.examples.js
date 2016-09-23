@@ -1,4 +1,3 @@
-if (document.body.classList.contains('shapes')) {
   origami('canvas#flip-image')
     .image('/assets/images/examples/megaman.png', 20, 50, 120, 120)
     .flip('horizontal')
@@ -103,9 +102,7 @@ if (document.body.classList.contains('shapes')) {
       font: '50px Arial'
     })
     .draw();
-}
 
-if (document.body.classList.contains('animation')) {
   origami('canvas#sprite')
     .background('#2A80B9')
     .sprite(310, 50, {
@@ -154,9 +151,7 @@ if (document.body.classList.contains('animation')) {
   //     origami('canvas#animation-1').stopRender();
   //   });
   // }, 3000);
-}
 
-if (document.body.classList.contains('charts')) {
   origami('canvas#chart-line')
     .chartLine({
         labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -166,4 +161,3 @@ if (document.body.classList.contains('charts')) {
         line: "1px dashed #000",
     })
     .draw();
-}

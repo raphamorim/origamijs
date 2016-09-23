@@ -24,3 +24,4 @@ collections:
 
 sass:
   sass_dir: assets/stylesheet
+  style: compressed

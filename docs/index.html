@@ -13,6 +13,6 @@ class: docs
 
 <p>Want to contribute? Fix or Adjust something? <a href="https://github.com/raphamorim/origamijs.com">Here's the place</a>.</p>
 
-<div class="read-wrapper">
-    <a href="1-why-origamijs" class="btn btn-read">Why Origamijs</a>
-</div>
+{% for doc in site.docs %}
+    {{doc.content}}
+{% endfor %}
