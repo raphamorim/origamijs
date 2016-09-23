@@ -1,5 +1,20 @@
 ---
 title: API docs
+topics:
+  - draw
+  - rect
+  - line
+  - arc
+  - polygon
+  - shape
+  - text
+  - image
+  - load
+  - rotate
+  - flip
+  - translation
+  - restore
+  - save
 layout: docs
 order: 3
 description: Origamijs Basic Usage. Origamijs is a Powerful and Lightweight Library to create using HTML5 Canvas.
