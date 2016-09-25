@@ -22,7 +22,7 @@
         padding-bottom: 10px;
     }
 
-    p {
+    & > p {
         width: 774px;
         font-family: "Montserrat-Light";
         font-size: 16px;
@@ -151,7 +151,7 @@
 }
 
 table {
-    min-width: 750px;
+    width: 750px;
     border-collapse: collapse;
 }
 
