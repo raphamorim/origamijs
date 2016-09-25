@@ -81,8 +81,7 @@ line: "1px dotted green" //default: "1px solid #000"</code></pre></td>
   <tr>
     <td>animation</td>
     <td><strong><i>String</i></strong></td>
-    <td>The data to plot in a line.<br>
-    Options: <code class="language-javascript">fade</code></td>
+    <td><p>The chart animation. Options: <code class="language-javascript">fade</code><br><a href="https://github.com/raphamorim/origami.js/issues/new">Suggest an animation</a></p></td>
   </tr>
   <tr>
     <td>gridLines</td>
