@@ -48,3 +48,49 @@ A line chart is a way of plotting data points on a line. Often, it is used to sh
       }
     ]
   }).draw();</code></pre>
+
+The following options can be included in <code class="language-javascript">chartLine</code> dataset to configure options for that specific dataset.
+
+<table>
+<thead>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>labels</td>
+    <td><strong><i>Array</i></strong></td>
+    <td>The label for the dataset which appears in the legend and tooltips</td>
+  </tr>
+  <tr>
+    <td>datasets</td>
+    <td><strong><i>Array</i></strong></td>
+    <td>Arrays of data objects. Example:<br><pre><code class="language-javascript">data: [], // array of numbers
+points: true, //default: false
+pointsColor: "green", //default: null
+line: "1px dotted green" //default: "1px solid #000"</code></pre></td>
+  </tr>
+  <tr>
+    <td>fill</td>
+    <td><strong><i>Boolean</i></strong></td>
+    <td>If true, fill the area under the line</td>
+  </tr>
+  <tr>
+    <td>animation</td>
+    <td><strong><i>String</i></strong></td>
+    <td>The data to plot in a line.<br>
+    Options: <code class="language-javascript">fade</code></td>
+  </tr>
+  <tr>
+    <td>gridLines</td>
+    <td><strong><i>Object</i></strong></td>
+    <td>Chart grid line configurations. Example: <br>
+        <pre><code class="language-javascript">vertical: true, //default: true
+horizontal: false //default: true</code></pre>
+    </td>
+  </tr>
+</tbody>
+</table>

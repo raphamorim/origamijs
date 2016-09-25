@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 860px;
     margin-left: 420px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
     h1 {
         font-size: 40px;
@@ -148,4 +148,32 @@
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
+}
+
+table {
+    min-width: 750px;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #E7E9ED;
+    color: #FFF;
+}
+
+table td {
+    font-family: "Montserrat-Light";
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    line-height: 29px;
+    color: $docs-gray;
+}
+
+table tr:last-child th {
+    border-bottom: 0;
+}
+
+table th {
+    background-color: #330031;
 }
