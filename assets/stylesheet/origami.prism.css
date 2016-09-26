@@ -42,23 +42,27 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection {
     /* Firefox */
-    background: hsl(200, 4%, 16%); /* #282A2B */
+    color: #FFF;
+    background: #330031; /* #282A2B */
 }
 
 pre[class*="language-"]::selection {
     /* Safari */
-    background: hsl(200, 4%, 16%); /* #282A2B */
+    color: #FFF;
+    background: #330031; /* #282A2B */
 }
 
 /* Text Selection colour */
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-    background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+    color: #FFF;
+    background: #330031; /* #EDEDED */
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-    background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+    color: #FFF;
+    background: #330031; /* #EDEDED */
 }
 
 /* Inline code */
