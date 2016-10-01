@@ -15,11 +15,11 @@ First of all, get Origami.js using [Download Option]({{ site.downloadLink }}) or
 
 To get using Bower just run this command
 
-<pre><code class="language-javascript">bower install origamijs</code></pre>
+<pre class="language-javascript"><code class="language-javascript">bower install origamijs</code></pre>
 
 Or get using NPM just run this command
 
-<pre><code class="language-javascript">npm install origamijs</code></pre>
+<pre class="language-javascript"><code class="language-javascript">npm install origamijs</code></pre>
 
 Add the source before body tag end:
 

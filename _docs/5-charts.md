@@ -24,7 +24,7 @@ A line chart is a way of plotting data points on a line. Often, it is used to sh
 <pre><code class="language-javascript">origami('canvas#chart-line')
   .chartLine({
     labels: ["January", "February", "March", "April", "May", "June", "July"],
-    animation: "fade",
+    fill: true,
     datasets: [
       {
         data: [1, 9, 8, 71, 56, 30, 60],
@@ -39,12 +39,6 @@ A line chart is a way of plotting data points on a line. Often, it is used to sh
       {
         data: [85, 40, 20, 10, 15, 18, 0],
         line: "1px dashed orange",
-      },
-      {
-        data: [10, 60, 50, 90],
-        points: true,
-        pointsColor: "green",
-        line: "1px dotted green",
       }
     ]
   }).draw();</code></pre>
