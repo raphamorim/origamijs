@@ -85,5 +85,15 @@ line: "1px dotted green" //default: "1px solid #000"</code></pre></td>
 horizontal: false //default: true</code></pre>
     </td>
   </tr>
+  <tr>
+    <td>labelColor</td>
+    <td><strong><i>String</i></strong></td>
+    <td>The Labels colors, default is #5e5e5e</td>
+  </tr>
+  <tr>
+    <td>gridLinesColor</td>
+    <td><strong><i>String</i></strong></td>
+    <td>The Grid Line colors, default is #e7e7e7</td>
+  </tr>
 </tbody>
 </table>
