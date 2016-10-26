@@ -78,6 +78,22 @@
     })
     .draw();
 
+  var style = {
+    background: 'red',
+    borderSize: '4px',
+    borderColor: '#FFF',
+    borderStyle: 'dotted'
+  };
+  origami('canvas#opacity')
+    .arc(80, 100, 50, style)
+    .opacity(0.6)
+    .arc(200, 100, 50, style)
+    .opacity(0.3)
+    .arc(320, 100, 50, style)
+    .opacity(0.1)
+    .arc(440, 100, 50, style)
+    .draw();
+
   origami('canvas#shape')
     .styles('.pac-man')
     .shape('.pac-man')
@@ -85,19 +101,19 @@
 
   origami('canvas#text')
     .background('#720034')
-    .text("Canvas", 140, 180, {
+    .text("Canvas", 140, 140, {
       color: '#E40068',
       font: '60px Helvetica',
       align: 'center',
       border: '2px solid #330031'
     })
-    .text("Rocks!!", 480, 180, {
+    .text("Rocks!!", 480, 120, {
       color: '#330031',
       font: '140px Helvetica',
       align: 'center',
       border: '2px dotted #E40068'
     })
-    .text("origamijs", 120, 115, {
+    .text("origamijs", 120, 85, {
       color: '#FFF',
       font: '50px Arial'
     })
@@ -155,6 +171,7 @@
   origami('canvas#chart-line')
     .chartLine({
       labels: ["January", "February", "March", "April", "May", "June", "July"],
+      fill: true,
       datasets: [
         {
           data: [1, 9, 8, 71, 56, 30, 60],
@@ -169,12 +186,6 @@
         {
           data: [90, 40, 20, 10, 15, 18, 0],
           line: "1px dashed orange",
-        },
-        {
-          data: [10, 60, 50, 80],
-          points: true,
-          pointsColor: "green",
-          line: "1px dotted green",
         }
       ]
   }).draw();

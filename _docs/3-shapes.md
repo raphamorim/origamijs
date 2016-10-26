@@ -9,6 +9,10 @@ topics:
   - shape
   - text
   - image
+  - opacity
+  - flip
+  - translate
+  - composition
 layout: docs
 order: 3
 description: Origamijs Basic Usage. Origamijs is a Powerful and Lightweight Library to create using HTML5 Canvas.
@@ -380,6 +384,32 @@ Default: <code class="language-markup">slow</code>
 Options: <code class="language-markup">slow</code>, <code class="language-markup">normal</code> and <code class="language-markup">fast</code>
 
 <pre><code class="language-javascript">origami('#my-canvas').rotate(degrees);</code></pre>
+
+## Opacity
+
+Specifies the alpha value that is applied to shapes and images before they are drawn onto the canvas. The value is in the range from 0.0 (fully transparent) to 1.0 (fully opaque).
+
+<div class="example dark">
+  <canvas id="opacity"></canvas>
+</div>
+
+<pre><code class="language-javascript">var style = {
+  background: 'red',
+  borderSize: '4px',
+  borderColor: '#FFF',
+  borderStyle: 'dotted'
+};
+
+origami('#my-canvas')
+  .arc(80, 100, 50, style)
+  .opacity(0.6)
+  .arc(200, 100, 50, style)
+  .opacity(0.3)
+  .arc(320, 100, 50, style)
+  .opacity(0.1)
+  .arc(440, 100, 50, style)
+  .draw();
+</code></pre>
 
 ## Restore
 
