@@ -80,11 +80,12 @@ If you want to play the stopped animation, you must to use <code class="language
     .restore()
     .restore()
     .arc(370,150,105, {
-    border: '1px solid #FFF'
-  }) .image('images/Canvas_sun.png', 220, 0)
+      border: '1px solid #FFF'
+    })
+    .image('images/Canvas_sun.png', 220, 0)
     .load(function(octx){
-    octx.startRender(draw);
-  })
+      octx.startRender(draw);
+    })
 }
 
 draw();</code></pre>
