@@ -62,7 +62,7 @@ The following options can be included in <code class="language-javascript">chart
   <tr>
     <td>datasets</td>
     <td><strong><i>Array</i></strong></td>
-    <td>Arrays of data objects. Example:<br><pre><code class="language-javascript">data: [], // array of numbers
+    <td>Arrays of data objects. Example:<br><pre><code class="language-javascript">data: [], // array of numbers || array of arrays
 points: true, //default: false
 pointsColor: "green", //default: null
 line: "1px dotted green" //default: "1px solid #000"</code></pre></td>
@@ -94,6 +94,11 @@ horizontal: false //default: true</code></pre>
     <td>gridLinesColor</td>
     <td><strong><i>String</i></strong></td>
     <td>The Grid Line colors, default is #e7e7e7</td>
+  </tr>
+  <tr>
+    <td>tense</td>
+    <td><strong><i>Number</i></strong></td>
+    <td>The Label Tense, default is 7</td>
   </tr>
 </tbody>
 </table>
