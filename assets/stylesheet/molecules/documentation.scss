@@ -162,6 +162,15 @@ table td, table th {
     color: #FFF;
 }
 
+table th {
+    font-family: "Montserrat-Regular";
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    background-color: #660257;
+
+}
+
 table td {
     font-family: "Montserrat-Light";
     font-size: 16px;
@@ -172,8 +181,4 @@ table td {
 
 table tr:last-child th {
     border-bottom: 0;
-}
-
-table th {
-    background-color: #330031;
 }
