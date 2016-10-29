@@ -31,11 +31,16 @@
         text-transform: uppercase;
 
         &.subtopic {
-            font-family: 'Montserrat-Light';
-            font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            font-size: 12px;
             font-weight: 300;
+            color: #D3D3D3;
             letter-spacing: 0.3px;
             font-style: normal;
+        }
+
+        &.subtopic:hover {
+            color: #fff;
         }
     }
 }
