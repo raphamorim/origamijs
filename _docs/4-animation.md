@@ -18,22 +18,27 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
 
 <code class="language-javascript">speed</code> • optional
 
-<code class="language-javascript">loop</code> • optional, default: <code class="language-javascript">true</code>
+<code class="language-javascript">animation</code> • optional, default: <code class="language-javascript">false</code>
+
+<code class="language-javascript">loop</code> • optional, default: <code class="language-javascript">false</code>
 
 <div class="example dark">
   <canvas id="sprite"></canvas>
 </div>
 
-<pre><code class="language-javascript">origami('#demo-1')
-  .background('#2A80B9')
-  .sprite(310, 50, {
-    src: '/assets/images/examples/coin-sprite.png',
-    frames: 10,
-    speed: 60,
-    loop: true
-  }).load(function(octx){
-    octx.draw();
-  })</code></pre>
+<pre><code class="language-javascript">
+  origami('#demo-1')
+    .background('#2A80B9')
+    .sprite(310, 50, {
+      src: '/assets/images/examples/coin-sprite.png',
+      frames: 10,
+      speed: 60,
+      animation: true,
+      loop: true
+    }).load(function(octx){
+      octx.draw();
+    })
+</code></pre>
 
 ## Start Render
 
