@@ -28,15 +28,13 @@ Let's see:
 <p><pre><code class="language-javascript">var style = {
   color: '#000',
   font: '70px Helvetica',
-  align: 'center',
   border: '2px solid gold'
 };
 
 origami('.canvas-class')
-  .text("Nice!", 100, 100, style)
-  .text("Really Nice!", 150, 150, style)
-
-origami.draw();
+  .text("Nice!", 10, 70, style)
+  .text("Really Nice!", 10, 145, style)
+  .draw();
 </code></pre></p>
 
 You can use pure CSS to style a shape. See Shape.
