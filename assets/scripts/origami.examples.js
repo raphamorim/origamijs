@@ -123,7 +123,9 @@
     .background('#2A80B9')
     .sprite(310, 50, {
       src: '/assets/images/examples/coin-sprite.png',
-      frames: 10,
+      frames: {
+        total: 10
+      },
       speed: 60,
       loop: true
     }).load(function(octx){
