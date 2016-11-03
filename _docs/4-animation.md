@@ -12,7 +12,7 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
 
 ## Sprite
 
-<code class="language-javascript">frames</code> • required
+<code class="language-javascript">frames</code> • required, default: <code class="language-javascript">{total: 0, animation: true}</code>
 
 <code class="language-javascript">src</code> • required
 
@@ -28,9 +28,10 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
   .background('#2A80B9')
   .sprite(310, 50, {
     src: '/assets/images/examples/coin-sprite.png',
-    frames: 10,
-    speed: 60,
-    loop: true
+    frames: {
+       total: 10
+    },
+    speed: 60
   }).load(function(octx){
     octx.draw();
   })</code></pre>
