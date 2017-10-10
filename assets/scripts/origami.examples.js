@@ -127,6 +127,7 @@
         total: 10
       },
       speed: 60,
+      animation: true,
       loop: true
     }).load(function(octx){
       octx.draw();
