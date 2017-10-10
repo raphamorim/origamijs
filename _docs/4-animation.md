@@ -12,7 +12,7 @@ description: Animation Guide - Origamijs is a Powerful and Lightweight Library t
 
 ## Sprite
 
-<code class="language-javascript">frames</code> • required
+<code class="language-javascript">frames</code> • required, default: <code class="language-javascript">{total: 0, animation: true}</code>
 
 <code class="language-javascript">src</code> • required
 
